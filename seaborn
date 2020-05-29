@@ -1,0 +1,62 @@
+'''
+Seaborn Exercises:
+https://github.com/SuvroBaner/Python-for-Data-Science-and-Machine-Learning-Bootcamp/blob/master/5.%20Seaborn/Seaborn%20Exercises%20.ipynb
+'''
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+sns.set_style('whitegrid')
+titanic =sns.load_dataset('titanic')
+titanic.head()
+
+#Exercise: Create the plots:
+#Jointplot
+sns.jointplot(x='fare', y='age', data=titanic)
+
+
+#Scatterplot (not required but did anyway)
+sns.scatterplot(x= titanic['fare'], y=titanic['age'])
+plt.title("Titanic Scatterplot", fontsize=20)
+plt.xlabel("age", fontsize=15)
+plt.ylabel("fare",fontsize=15)
+
+
+#Distribution plot
+sns.distplot(titanic['fare'])
+plt.title("Titanic Distribution Plot", fontsize=20)
+
+
+#Box plot
+#seaborn.boxplot(x=None, y=None, hue=None, data=None, order=None, hue_order=None, orient=None, color=None, palette=None, saturation=0.75, width=0.8, dodge=True, fliersize=5, linewidth=None, whis=1.5, ax=None, **kwargs)
+sns.boxplot(x=titanic['class'], y=titanic['age'])
+plt.title("Titanic Boxplot", fontsize=20)
+plt.xlabel("class", fontsize=15)
+plt.ylabel("fare",fontsize=15)
+
+#Swarmplot
+sns.swarmplot(x=titanic['class'], y=titanic['age'])
+plt.title("Titanic Violinplot", fontsize=20)
+plt.xlabel("class", fontsize=15)
+plt.ylabel("fare",fontsize=15)
+
+#Countplot
+sns.countplot(titanic['sex'])
+plt.title("Titanic Barplot", fontsize=20)
+plt.xlabel("sex", fontsize=15)
+plt.ylabel("count",fontsize=15)
+
+
+#heatmap
+sns.heatmap(titanic.corr() )
+
+
+#countplot with age and sex(female, male)
+sns.countplot(titanic['age'], hue="sex", data=titanic)
+plt.title("Wrong: Was my first attempt.")
+
+#This one I had to lookup:
+grid=sns.FacetGrid(data=titanic, col="sex")
+grid.map(plt.hist, 'age')
+#FaccetGrid makes things much more specific, worth looking into more
