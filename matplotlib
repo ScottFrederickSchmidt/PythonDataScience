@@ -1,0 +1,72 @@
+'''
+Matplotlib Exercises:
+https://github.com/SuvroBaner/Python-for-Data-Science-and-Machine-Learning-Bootcamp/blob/master/4.%20Matplotlib/Matplotlib%20Exercises%20.ipynb
+'''
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+x = np.arange(0,100)
+y = x*2
+z = x**2
+
+fig=plt.figure()
+ax=fig.add_axes([0,0,1,1])
+ax.plot(x,y)
+ax.set_title("title")
+ax.set_xlabel('x')
+ax.set_ylabel('y')
+plt.show()
+
+
+#Exercise2:Create a figure object and put two axes on it, ax1 and ax2.
+#Located at [0,0,1,1] and [0.2,0.5,.2,.2] 
+fig2=plt.figure()
+ax1=fig2.add_axes([0,0,1,1])
+ax2=fig2.add_axes([0.2,0.5,.2,.2])
+
+#Now plot (x,y) on both axes. And call your figure object to show it.
+ax1.plot(x,y)
+ax1.set_xlabel('x')
+ax1.set_ylabel('y')
+ax2.plot(x,y)
+ax2.set_xlabel('x')
+ax2.set_ylabel('y')
+
+
+
+
+#Excercise3
+#Create the plot below by adding two axes to a figure object at [0,0,1,1] and [0.2,0.5,.4,.4]
+#Now use x,y, and z arrays to recreate the plot below. Notice the xlimits and y limits on the inserted plot:
+
+
+fig3=plt.figure()
+axes1=fig3.add_axes([0,0,1,1])
+axes2=fig3.add_axes([0.2,0.5,.4,.4])
+
+#Now plot (x,y) on both axes. And call your figure object to show it.
+axes1.plot(y,z)
+axes1.set_xlabel('Y')
+axes1.set_ylabel('Z')
+
+axes2.plot(x,y)
+axes2.set_title('zoom')
+axes2.set_xlim(20,22)
+axes2.set_ylim(30, 50)
+axes2.set_xlabel('X')
+axes2.set_ylabel('Y')
+
+
+
+
+#Exercise 4
+#Use plt.subplots(nrows=1, ncols=2) to create the plot below.
+fig4, axes4=plt.subplots(1, 2)
+
+
+#Now plot (x,y) and (x,z) on the axes. Play around with the linewidth and style
+axes4[0].plot(x,y, 'b', lw=3, ls='-')
+axes4[1].plot(x,z, 'r', lw=3, ls='--')
+
+#Exercise 4 was somewhat different because of the indexes. Had to refer to lecture.
