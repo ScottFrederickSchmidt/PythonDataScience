@@ -1,0 +1,109 @@
+'''
+Linear Regression Exercise:
+https://github.com/SuvroBaner/Python-for-Data-Science-and-Machine-Learning-Bootcamp/blob/master/10.%20Linear-Regression/Linear%20Regression%20-%20Project%20Exercise%20.ipynb
+
+Helpful Article: https://datascienceplus.com/linear-regression-with-python/
+This above article helped me a lot. I will need to review this topic again at a later date
+as it seems very practical with data analysis! 
+'''
+
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+
+housing_data=pd.read_csv(r'data\USA_Housing')
+customer_data=housing_data=pd.read_csv(r'data\customers')
+# customer_head=customer_data.head()
+# customer_info=customer_data.info()
+# customer_describe=customer_data.describe()
+
+#Create a histogram of the Age
+col_a=df3['a'].plot.hist()
+
+
+#Use seaborn to create a jointplot to compare the Time on Website and Yearly Amount Spent columns. 
+#Does the correlation make sense?
+time_website=sns.jointplot(x='Time on Website' ,y='Yearly Amount Spent', data=customer_data)
+
+# Do the same but with the Time on App column instead.
+time_app=sns.jointplot(x='Time on App' ,y='Yearly Amount Spent', data=customer_data)
+
+#Use jointplot to create a 2D hex bin plot comparing Time on App and Lengthof Membership.
+membership=sns.jointplot(x='Time on App' ,y='Length of Membership', kind="hex", data=customer_data)
+#Original Answer:membership2=matplotlib.pyplot.hexbin(x='Time on App' ,y='Length of Membership', data=customer_data)
+
+#Let's explore these types of relationships across the entire data set.
+#Use pairplot to recreate the plot below.(Don't worry about the the colors)
+
+#Based off this plot what looks to be the most correlated feature with Yearly Amount Spent?
+sns.pairplot(customer_data) #length of membership has a very high correlation
+
+#Create a linear model plot (using seaborn's lmplot) of Yearly Amount Spent vs. Length of Membership.
+sns.lmplot('Yearly Amount Spent', 'Length of Membership', data=customer_data)
+
+####Training and Testing Data
+#Now that we've explored the data a bit, let's go ahead and split the data into training and testing sets. 
+#Set a variable X equal to the numerical features of the customers and a variable y equal to the "Yearly Amount Spent" column.
+y=customer_data['Yearly Amount Spent']
+X=customer_data[['Time on App', 'Time on Website', 'Length of Membership', 'Avg. Session Length']]
+
+
+#Use model_selection.train_test_split from sklearn to split the data into training and testing sets. 
+#Set test_size=0.3 and random_state=101
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=101)
+
+
+####Training the Model:
+from sklearn.linear_model import LinearRegression
+
+#Create an instance of a LinearRegression() model named lm.
+lm=LinearRegression()
+
+#Train/fit lm on the training data.
+lm.fit(X_train, y_train)
+
+#Print out the coefficients of the model
+lm.coef_
+
+####Predicting the Data:
+#Use lm.predict() to predict off the X_test set of the data.
+predictions=lm.predict(X_test)
+
+#Create a scatterplot of the real test values versus the predicted values.
+plt.scatter(y_test, predictions)
+
+
+####Evaluating the Model:
+#Calculate the Mean Absolute Error, Mean Squared Error, and the Root Mean Squared Error. 
+from sklearn import metrics
+print('MAE:', metrics.mean_absolute_error(y_test, predictions))
+print('MSE:', metrics.mean_squared_error(y_test, predictions))
+print('RMSE:', np.sqrt(metrics.mean_squared_error(y_test, predictions)))
+
+metrics.explained_variance_score(y_test, predictions)
+
+#####Residuals:
+#Plot a histogram of the residuals and make sure it looks normally distributed. 
+#Use either seaborn distplot, or just plt.hist().
+sns.distplot((y_test-predictions), bins=50)
+
+
+####Conclusion:
+#Recreate the DataFrame:
+cdf=pd.DataFrame(lm.coef_,X.columns, columns=['Coeff'])
+print(cdf)
+
+#How can you interpret these coefficients?
+#One unit change in the independent variable results in the vale of the dependent variable
+
+
+#Do you think the company should focus more on their mobile app or on their website?
+'''
+App has a better correlation between amount spent and time. 
+For every additional unit on the website, there is only a $.19 change (versus 38.56 on the App).
+Therefore, even though the app is more predictable, it seems the website needs more work.
+However, the App is working bringing in more money so it makes sense to keep that up to date.
+'''
