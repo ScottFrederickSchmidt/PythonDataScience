@@ -1,0 +1,57 @@
+'''
+Logistic Regression Project:
+https://github.com/SuvroBaner/Python-for-Data-Science-and-Machine-Learning-Bootcamp/blob/master/11.%20Logistic-Regression/Logistic%20Regression%20Project%20.ipynb
+
+This excercise was very similiar to the linear regression one.
+So, it was not as difficult the second time around.
+'''
+
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+ad_data=pd.read_csv(r'data\ads')
+head=ad_data.head()
+#print(head) #Daily Time Spent on Site  Age  Area Income  Daily Internet Usage
+
+#Create a histogram of the Age
+ages=ad_data['Age'].plot.hist(bins=30)
+ages.set_xlabel('Age')
+
+#Create a jointplot showing Area Income versus Age.
+sns.jointplot(ad_data['Area Income'], ad_data['Age'])
+
+#Create a jointplot showing the kde distributions of Daily Time spent on site vs. Age.
+sns.jointplot(ad_data['Daily Time Spent on Site'], ad_data['Age'], kind="kde")
+
+#Create a jointplot of 'Daily Time Spent on Site' vs. 'Daily Internet Usage'
+sns.jointplot(ad_data['Daily Time Spent on Site'], ad_data['Daily Internet Usage'])
+
+#Finally, create a pairplot with the hue defined by the 'Clicked on Ad' column feature.
+sns.pairplot(ad_data, hue='Clicked on Ad')
+
+#Split the data into training set and testing set using train_test_split
+from sklearn.model_selection import train_test_split
+X=ad_data[['Daily Time Spent on Site',  'Age',  'Area Income']]
+y=ad_data['Clicked on Ad']
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=101)
+
+#Train and fit a logistic regression model on the training set.
+from sklearn.linear_model import LogisticRegression
+
+logmodel=LogisticRegression()
+logmodel.fit(X_train, y_train)
+
+######Predictions and Evaluations
+#Now predict values for the testing data.
+predictions=logmodel.predict(X_test)
+
+#Create a classification report for the model.
+from sklearn.metrics import classification_report, confusion_matrix
+print(classification_report(y_test, predictions) )
+
+confusion_matrix(y_test, predictions)
+print(confusion_matrix)
+
