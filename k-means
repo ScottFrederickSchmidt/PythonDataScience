@@ -1,0 +1,78 @@
+'''
+K-Means Clustering:
+https://github.com/SuvroBaner/Python-for-Data-Science-and-Machine-Learning-Bootcamp/blob/master/15.%20K-Means-Clustering/K%20Means%20Clustering%20Project%20.ipynb
+'''
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import RandomizedSearchCV
+from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import train_test_split
+%matplotlib inline
+
+df1=pd.read_csv('data\college_data')
+df1_head=df1.head()
+print(df1_head)
+
+#Create a scatterplot of Grad.Rate versus Room.Board where the points are colored by the Private column.
+room_board=plt.scatter(x=df1['Grad.Rate'], y=df1['Room.Board'])
+sns.lmplot(x='Room.Board', y='Grad.Rate', data=df1, hue='Private', fit_reg=False)
+print(room_board)
+
+#Create a scatterplot of F.Undergrad versus Outstate where the points are colored by the Private column.
+outstate=plt.scatter(x=df1['F.Undergrad'], y=df1['Outstate'])
+sns.lmplot(x='F.Undergrad', y='Outstate', data=df1, hue='Private', fit_reg=False)
+print(outstate)
+
+#Create a similar histogram for the Grad.Rate column.
+grad=plt.hist(df1['Grad.Rate'])
+print(grad)
+
+#Notice how there seems to be a private school with a graduation rate of higher than 100%.What is the name of that school?
+df1[df1['Grad.Rate']>100] #Cazenovia College
+
+#Set that school's graduation rate to 100 so it makes sense. You may get a warning not an error) when doing this operation, so use dataframe operations or just re-do the histogram visualization to make sure it actually went through.
+df1['Grad.Rate']['Cazenovia College']=100
+
+#Import KMeans from SciKit Learn.
+#Create an instance of a K Means model with 2 clusters.
+#Fit the model to all the data except for the Private label.
+from sklearn.cluster import KMeans
+kmeans = KMeans(n_clusters=2)
+kmeans.fit(df1.drop('Private',axis=1))
+
+fig, (ax1, ax2)=plt.subplots(1,2, sharey=True, figsize=(10,6))
+ax1.set_title('K Means')
+ax1.scatter(df1[0][:,0], df1[0][:,1], c=kmeans.labels_, cmap='rainbow')
+
+ax2.set_title('Original')
+ax2.scatter(df1[0][:,0], df1[0][:,1], c=data[1], cmap='rainbow')
+
+#What are the cluster center vectors?
+kmeans.cluster_centers_
+
+'''
+#There is no perfect way to evaluate clustering if you don't have the labels, 
+#however since this is just an exercise, we do have the labels, so we take advantage of this to evaluate our clusters, 
+#keep in mind, you usually won't have this luxury in the real world.
+#Create a new column for df called 'Cluster', which is a 1 for a Private school, and a 0 for a public school.
+'''
+
+
+#This last section confused me and I will need to look at it more later:
+def converter(private):
+    if private=='Yes':
+        return 1
+    else:
+        return 0
+    
+df1['Cluster'] = df1['Private'].apply(converter)
+
+
+#Create a confusion matrix and classification report to see how well the Kmeans clustering worked without being given any labels.
+print(confusion_matrix(df['Cluster'], kmeans.labels))
+print('\n')
+print(classification_report(df['Cluster'], kmeans.labels))
