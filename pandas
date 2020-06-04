@@ -1,0 +1,133 @@
+'''
+Pandas Salaries Assessment : 
+https://github.com/SuvroBaner/Python-for-Data-Science-and-Machine-Learning-Bootcamp/blob/master/3.%20Pandas/Pandas%20Exercises/SF%20Salaries%20Exercise.ipynb
+'''
+
+import pandas as pd
+sal=pd.read_csv('data\salaries')
+head=sal.head()
+info=sal.info()
+
+#What is the average BasePay ?
+pay=sal['BasePay'].mean()
+
+#What is the highest amount of OvertimePay in the dataset ?
+sal['OvertimePay'].max()
+
+
+#What is the job title of JOSEPH DRISCOLL ? Note: Use all caps, otherwise you may get an answer that doesn't match up (there is also a lowercase Joseph Driscoll).
+sal[sal['EmployeeName']=='JOSEPH DRISCOLL']
+
+#How much does JOSEPH DRISCOLL make (including benefits)?
+sal[sal['EmployeeName']=='JOSEPH DRISCOLL']['TotalPayBenefits']
+
+#What is the name of highest paid person (including benefits)?
+sal[sal['TotalPayBenefits']==sal['TotalPayBenefits'].max()]
+
+#What is the name of lowest paid person (including benefits)?
+sal[sal['TotalPayBenefits']==sal['TotalPayBenefits'].min()]
+
+#Do you notice something strange about how much he or she is paid?
+#Negative number, probably owes health insurance money.
+
+#What was the average (mean) BasePay of all employees per year? (2011-2014) ?''
+sal.groupby('Year').mean()['BasePay']
+
+#How many unique job titles are there?
+sal["JobTitle"].nunique()
+#https://stackoverflow.com/questions/26216087/unique-values-from-some-column-df-pandas
+
+#What are the top 5 most common jobs?
+sal['JobTitle'].value_counts().head(5)
+#https://stackoverflow.com/questions/48590268/pandas-get-the-most-frequent-values-of-a-column
+
+
+
+#How many Job Titles were represented by only one person in 2013? (e.g. Job Titles with only one occurence in 2013?)
+#sal[sal['Year']==2013['JobTitle'].value_counts().loc[lambda x : x=1] 
+#https://stackoverflow.com/questions/50258427/pandas-value-counts-with-constraint-for-more-than-one-occurance
+sum (sal[sal["Year"]==2013]['JobTitle'].value_counts()==1)
+
+#How many people have the word Chief in their job title? (This is pretty tricky)
+
+def chief_string(title):
+    if 'chief' in title.lower().split():
+        return True
+    else:
+        return False
+
+sum(sal['JobTitle'].apply(lambda x: chief_string(x)))
+    
+#Bonus: Is there a correlation between length of Job Title and Salary?
+
+#sal[['JobTitle', 'title_len']].corr()  #No the correlation is 1
+
+
+'''
+Pandas Ecom Assessment: 
+https://github.com/SuvroBaner/Python-for-Data-Science-and-Machine-Learning-Bootcamp/blob/master/3.%20Pandas/Pandas%20Exercises/Ecommerce%20Purchases%20Exercise%20.ipynb
+
+Note to self: Need a little more practice with using .apply within a lambda expression
+'''
+
+import pandas as pd
+ecom=pd.read_csv('data\ecom')
+print(ecom.head())
+
+#How many rows and columns are there?
+count_row = ecom.shape[0]  # gives number of row count OR len(ecom.index)
+count_col = ecom.shape[1]  # gives number of col count OR len(ecom.column)
+print("total rows:", count_row, "total columns:", count_col)
+#https://stackoverflow.com/questions/15943769/how-do-i-get-the-row-count-of-a-pandas-dataframe
+
+#What is the average Purchase Price?
+ecom['Purchase Price'].mean()
+
+#What were the highest and lowest purchase prices?
+high=ecom['Purchase Price'].max()
+low=ecom['Purchase Price'].min()
+
+#How many people have English 'en' as their Language of choice on the website?
+#ecom[ecom['Language']=='en'] #df with only en people:
+ecom[ecom['Language']=='en'].count()
+
+#How many people have the job title of "Lawyer" ?
+ecom[ecom['Job']=="Lawyer"].count()
+
+#How many people made the purchase during the AM and how many people made the purchase during PM ?
+#(Hint: Check out value_counts() )
+#ecom[ecom['AM or PM']=="AM"].counts()
+#ecom[ecom['AM or PM']=="PM"].counts()
+
+ecom['AM or PM'].value_counts()
+
+#What are the 5 most common Job Titles?
+ecom['Job'].value_counts().head(5)
+
+#Someone made a purchase that came from Lot: "90 WT" , what was the Purchase Price for this transaction?
+ecom[ecom['Lot']=='90 WT']['Purchase Price']
+
+#What is the email of the person with the following Credit Card Number: 4926535242672853
+ecom[ecom['Credit Card']==4926535242672853]['Email']
+
+
+#How many people have American Express as their Credit Card Provider and made a purchase above $95 ?
+#ecom[(ecom['CC Provider']=='American Express') & (ecom['Purchase Price']>95)].count()
+
+
+#Hard: How many people have a credit card that expires in 2025?
+#ecom[ecom['CC Exp Date'][-2:]=='25'].count()
+sum(ecom['CC Exp Date'].apply(lambda x: x[3:])=='25')
+
+#Hard: What are the top 5 most popular email providers/hosts (e.g. gmail.com, yahoo.com, etc...)
+
+#First step is to get everything after the @ sign. Here an example:
+my_string="hello python world , i'm a beginner "
+print (my_string.split("world",1)[1]) # , i'm a beginner 
+#Source: https://stackoverflow.com/questions/12572362/how-to-get-a-string-after-a-specific-substring
+
+#Therefore, solution should look something like this...
+#ecom['Email'].split("@",1)[1].count().head(5) 
+
+#Using apply is needed:
+ecom['Email'].apply(lambda x: x.split('@')[1]).value_counts().head(5)
