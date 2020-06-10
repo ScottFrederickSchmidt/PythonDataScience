@@ -1,0 +1,279 @@
+#Keras Project Solutions:
+#This section mostly consists of keras and tensorflow:
+#Because I am new to data science, I chose the third project option to do a follow along. 
+#I am going to retry this project again at a later date.
+import pandas as pd
+import seaborn as sns
+
+df=pd.read_csv('data\loan')
+sns.countplot(x='loan_status', data=df)
+
+sns.distplot(df['loan_amount'], kde=False, bins=40)
+
+#Explore the correlation between the continuous feature variables. 
+#Calculate the correlation between all numeric variables using .corr()
+df.corr()
+plt.figure(figsize=(12,7))
+sns.heatmap(df.corr(), annot=True, cmap='viridis')
+
+#Print out descriptions and perform a scatterplot between them:
+feat_info('installment')
+feat_info('loan_amnt')
+
+sns.scatterplot(x='installment', y='loan_amnt', data=df)
+sns.boxplot(x='loan_status', y='loan_amnt', data=df)
+
+#Calculate the summary statistics for the loan amount, grouped by loan_status:
+df.groupby('loan_status')['loan_amnt'].describe()
+
+#TASK: Let's explore the Grade and SubGrade columns that LendingClub attributes fo the loans.
+#What are the unique possible grades and subgrades?
+
+df['grade'].unique()
+df['sub_grade'].unique()
+
+feat_info('sub_grade')
+
+#Create a countplot per grade. Set the hue to the loan_status label:
+sns.countplot(x='grade', data=df, hue=loan_status)
+
+#Display a count per subgrade. May need to resize this plot and reoder the x axis. 
+#Explore the loans made per subgrade as well being separated based on the loan_status:
+subgrade_order=sorted(df['sub_grade'].unique())
+sns.countplot(x='sub_grade', data=df, order=subgrade_order, hue=loan_status)
+
+#Looks like F and G subgrades dont get paid back that often. 
+#Isolate those and recreate the ountplot just for those subgrades
+f_and_g=df[(df['grade']=='G') | (df['grade']=='F')]
+
+#Create a new column called "loan_repaid" which will contain a 1 if the loan status was "Fully Paid and 0 if it was charged off:"
+df['loan_status'].map({'Fully Paid':1, 'Charged Off':0})
+df[['loan_repaid', 'loan_status']]
+
+#Showing the correlation of the numeric features to the new loan_repaid column:
+df.corr(['loan_repaid']).sort_values().drop('loan_repaid').plot(kind='bar')
+
+
+#Section2
+#Keep missing data, drop missing data, or fill missing data:
+
+#Length of the dataframe
+len(df)
+
+df.isnull().sum()
+
+#Examine emp_title and emp_length to see whether it will be ok to drop them.
+#Print out their feature info using the feat_info() function from the top of the notebook:
+
+feat_info('emp_title' )
+
+#How many unique employment job titles are there?
+df['emp_title'].nunique()
+
+df['emp_title'].value_counts()
+
+#Realistically there are too many unique job titles to try to convert this to a dummy variable feature. 
+#Lets remove that emp_title column
+df=df.drop('emp_title', axis=1) # cannot run this more than one or will throw error
+sorted(df['emp_length'].dropna().unique() )
+
+emp_length_order=['<1 year','1 years', '3 years', '5 years', '10+ years']
+sns.countplot(x='emp_length', data=df, order=emp_length_order, hue='loan_status')
+
+#Percentage of charge offs per category. Visualize it with a bar plot:
+emp_co=df[df['loan_status']=='Charged Off'].groupby('emp_length').count()['loan_status']
+emp_fp=df[df['loan_status']=='Fully Paid'].groupby('emp_length').count()['loan_status']
+
+emp_co(emp_co+emp_fp) #this gives a direct ratio percentage
+emp_len.plot(kind='bar')
+
+df=df.drop('emp_length', axis=1)
+
+#Revsit the DataFrame to see what feature columns still have missing data:
+df.isnull().sum()
+
+df['purpose'].head()
+feat_info('purpose')
+          
+df=df.drop('title', axis=1)
+df['mort_acc'].value_counts()
+#Missing 10 percentage of the data. Do you drop all 10? Or try to fill in.
+
+df.corr()['mort_acc'].sort_values()
+
+#Looks like total_acc feature correlates with the mort_acc, this makes sense!
+#Lets try this fillna approach. We will group the dataframe by the total_acc 
+#and calculate the mean value for the mort_acc per total_acc entry:
+
+pd.DataFrame(model.history.history) 
+losses.plot()
+
+#We will group the dataframe by the total_account and calculate the mean value for the mort_acc per total_acc entry.
+total_acc_avg=df.groupby('total_acc').mean()['mort_acc']
+
+def fill_mort_acc(total, mort_acc):
+    if np.isnan(mort_acc):
+        return total_acc_avg[total_acc]
+    else:
+        return mort_acc
+
+#One of the hardest parts of the class:
+df['mort_acc']=df.apply(lambda x: fill_mort_acc('total_acc'), x['mort_acc'], axis=1 )
+df.isnull.sum()
+
+'''
+KERAS PROJECT SOLUTIONS - DATA PROCESSING:
+'''
+#List all columns that are currently non-numeric:
+df.select_dtypes(['object']).columns
+
+#Convert the term feature into either a 36 or 60 integer numeric data type using .apply() or .map():
+feat_info('term')
+df['term'].value_counts()
+df['term']=df['term'].apply(lambda term: term[:3]) #gets only 36 or 60
+
+#We know grade is part of sub_grade so just drop the grade feature:
+df=df.drop('grade', axis=1)
+
+#Convert the subgrade into dummy variables. Then concatenate these new columns to the original dataframe.
+#Remember to drop the original subgrade column and to add drop_first=True to get your get_dummies call.
+
+dummies=pd.get_dummies([df['sub_grade'], drop_first=True])
+df=pd.concat([df.drop('sub_grade', axis=1), dummies], axis=1)
+dummies=pd.get_dummies(['verification_status', 'application_type', 'initial_list'])
+
+#Review the value_counts for the home_ownership column:
+df['home_ownership'].value_counts()
+
+#Convert these to dummy variables but replace NONE and ANY with OTHER so that we end up with just 4 categories:
+#Mortgage, RENT, OWN, OTHER. Then concatenate them with the original dataframe. Remember to set drop_first=True
+#and to drop the original columns
+df['home_ownership']=df['home_ownership'].replace(['NONE, ANY'], 'OTHER')
+
+df=pd.concat([df.drop('home_ownership'), axis=1), dummies], axis=1)
+
+#Feature engineer a zip code column from the address in the data set. 
+#Create a column called zip_code that extracts the zip code from the address column:
+df['zip_code']=df['address'].apply(lambda address:address[-5:])
+df['zip_code'].value_counts()
+
+
+#Now make this zip_code column into dummy variables using pandas.
+#Concatenate the result and drop the original zip_code column along with the address column.
+dummies=pd.get_dummies(df['zip_code'], drop_first=True)
+df=pd.concat([dr.drop('zip_code', axis=1), dummies], axis=1)
+
+df=df.drop('address', axis=1)
+
+feat_info('issue_d') #The month which the loan was funded
+
+#Extract the year from this feature using a .apply function, then convert it to a numeric feature. 
+#Set this new data to a feature column called 'earliest_cr_year'. Then drop the earliest_cr_line feature
+feat_info('earliest_cr_line')
+
+df['earliest_cr_line'=df['earliest_cr_line'].apply(lambda date: int(date[-4:]))
+#Now the cr_line should only have the last 4 characters which should be the year
+   
+
+#import train_test_split from sklearn:
+from sklearn.model_selection import train_test_split
+   
+# drop the loan_status column we created earlier, since its a duplicate of the loan_repaid column.
+# We'll use the loan_repaid column since its already in 0s and 1s
+X= df.drop('loan_repaid', axis=1).values
+y=df['loan_repaid'].values
+
+#Build a sequential model to will be trained on the data. You have unlimited options but a solution uses:
+#a model that goes 78, 39, 19, 1:
+   
+model=Sequential()
+model.add(Dense(78, activation='relu'))
+model.Dropout(.2)
+   
+model.add(Dense(39, activation='relu'))
+model.Dropout(.2)
+   
+model.add(Dense(19, activation='relu'))
+model.Dropout(.2)
+
+model.add(Dense(units=1, activation='sigmoid'))
+
+model.compile(loss='binary_crossentropy', optimizer='adam')
+   
+X_train.shape
+   
+#Fit the model to the training data for at least 25 opochs. Also add the validation data for later plotting
+
+model.fit(x=X_train, y=y_train, epochs=25, batch_size=256, validation_data=(X_test, y_test))
+   
+'''
+KERAS PROJECT SOLUTIONS: MODEL EVAULATION
+'''
+#Pot out the validation loss versus the training loss:   
+
+losses=pd.DataFrame(model.history.history)
+losses.plot()
+   
+#Create preditions from X_test set and display a classification report and confusion matrix for the X_test set.
+from sklearn.metrics import classification_report, confusion_matrix
+predictions=model.predict_classes(X_test)
+print(classification_report(y_test, predictions))
+#Has high precision but low recall. Ideally would want to improve the .61 model score.
+#Accuracy is 89% which is higher than the model below and a random guess of 50%
+   
+df['loan_repid'].value_counts()
+   
+317696/len(df) #.803    80% accuracy
+   
+#Given the customer below, would you offer this person a loan?
+   
+import random
+random.seed(101)
+random_int=random.randint(0, len(df))
+
+new_customer=dr.drop('loan_repaid', axis=1).iloc[random_ind]
+
+new_customer=scaler.transform(new_customer.values.reshape(1, 78) )
+model.predict_classes(new_customer) #predicts it was a 1
+
+#Now check if the person did pay back loan:
+df.iloc[random_ind]['loan_repaid']
+   
+
+'''
+TENSORBOARD:
+'''
+import tensorflow as tf
+import tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Activation, Dropout
+from tensorflow.keras.callbacks import EarlyStopping, TensorBoard
+
+early_stop=EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=25)
+
+from datetime import datetime
+datetime.now().strftime("%Y-%m-%d--%H%M")
+
+log_directory='logs\\fit'
+   
+board=TensorBoard(log_dir=log_directory, histogram_freq=1, write_graph,
+    write_images=True, update_freq='epoch', profile_batch=2, embeddings_freq=1)
+   
+#Create the model layers:
+model=Sequential()
+model.add(Dense(units=30, activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(units=15, activation='relu'))
+model.add(Dropout(0.5))
+model.compile(loss='binary_crossentropy', optimizer='adam')
+
+#Train the model:
+model.fit(x=X_train, y=y_train, epochs==600, validation_data=(X_test, y_test), verbose=1, callbacks=[early_stop, board])
+   
+#Running Tensorboard:
+print(log_directory)
+#What is you log directly? Most likely logs\git
+
+#Use cd as command line to change directory to the file path reported back by pwd to your current .py file location
+
+#Then run this code at your command line or terminal 13mins on lecture:
+#C:\Users\Scott\Pierian-Data-Courses\TensorFlow-Two-Bootcamp\03-AANs>tensorboard --logdir logs\fit
