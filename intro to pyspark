@@ -1,0 +1,73 @@
+'''
+Intro to Spark and Python:
+'''
+from pyspark import SparkContext
+sc=SparkContext()
+
+%%writefile example.txt
+first line
+second line
+
+textFile=sc.textFile('example.txt') #creates RDD
+textFile.count()
+
+textFile.first()
+secfind= textFile.filter(lambda line: 'second' in line)
+
+secfind.collect()
+secfind.count()
+
+'''
+RDD Transformations and Actions:
+'''
+
+%%writefile example2.txt
+first
+second
+third
+
+sc=SparkContext()
+sc.textFile('example2.txt')
+
+text_rdd=sc.textFile('example2.txt')
+words=text_rdd.map(lambda line:line.split())
+words.collect()
+
+#flatmap vs map
+text_rdd.flatMap(lambda line:line.split()).collect() #array top to bottom 
+
+services=sc.textFile('services.txt')
+services.take(2) #gets columns and then first line of data
+servces.map(lambda line:line.split()).take(3)
+
+services.map(lambda line: line[1:] if first[0]=='#' else line).collect() #gets rid of #
+clean=clean.map(lambda line:line.split())
+clean.collect()
+
+pairs=clean.map(lambda lst: (lst[3], lst[-1])).collect() #grabs only State and Amount 
+rekey=pairs.reduceByKey(lambda amt1, amt2 : float(amt1+amt2) ) 
+
+rekey.collect()
+
+clean.collect()
+#Grab the (State, Amount) in form of tuple:
+step1=clean.map(lambda ls:lst[3],lst[-1])
+#Reduce by key
+step2=step1.reduceBykey(lambda amt1, amt2: float(amt1)+float(amt2))
+#Get rid of State, Amount, titles
+step3=step2.filter(lambda x: not x[0]=='State')
+#sort the results by amount:
+step4=step3.sortBy(lambda stAmount: stAmount[1]m ascending=False)
+#action
+step4.collect()
+
+x=['ID', 'State', 'Amount']
+
+#Harder to read:
+def func1(lst):
+    return lst[-1]
+
+#tuple unpacking:
+def fun2(id_st_amt):
+    (Id, st, amt)=id_st_amt
+    return amt #much more readable 
