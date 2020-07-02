@@ -1,0 +1,29 @@
+'''
+This was not directly part of the DataScience class. However, it was mentioned.
+I did extra practice using dropna() and fillna() because it is such an important concept.
+I also have the code where it can send the CSV back to an Excel sheet.
+'''
+
+#https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.fillna.html
+import pandas as pd
+#df=pd.read_csv("data\college_data")
+
+df = pd.DataFrame({'values_1': ['700','ABC','500','XYZ','1200'],
+                   'values_2': ['DDD','150','350','400','5000'] 
+                   })
+print(df.tail())
+
+df1 = df.apply (pd.to_numeric, errors='coerce')
+df1 = df1.dropna()
+df1=df1.reset_index(drop=True)
+print (df1)#drops all columns that have a non-number
+df1.to_excel("output.xlsx")  
+'''
+   values_1  values_2
+0     500.0     350.0
+1    1200.0    5000.0
+'''
+df2 = df.apply (pd.to_numeric, errors='coerce')
+df2=df2.fillna('0') #fils all non-numbers with a 0
+print(df2)
+df2.to_excel("output.xlsx")  #outputs to excel
