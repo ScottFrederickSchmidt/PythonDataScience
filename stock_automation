@@ -1,0 +1,76 @@
+#finalization attempt making it faster
+acc_num='1234567' #account number would go here.
+for position in ib.positions(acc_num): 
+    if  abs(position.position) > 200:
+        ib.sleep(.5)
+        stock_symbol=position.contract.symbol
+        print(stock_symbol) 
+                
+        contract = Stock(stock_symbol, 'SMART', 'USD') #Create the contract each ticker in the dataframe
+        data = ib.reqMktData(contract) #Request data from IB
+        ib.sleep(.5) #Dont hit IB too fast, must have or code will NOT work.
+        # print("data :", data)
+                
+        ask=data.ask
+        bid=data.bid
+        last=data.last
+        #print("ask: ", ask )
+        #print("bid: ", bid)
+       # print("last: ", last)
+        low_price=last/2
+        high_price=last*2
+        num_shares=200
+        
+        order = Order(action='BUY', orderType="LMT", tif="GTC",
+            totalQuantity=num_shares, lmtPrice=low_price,
+            account=acc_num, transmit=False) 
+        ib.sleep(.5)
+        ib.placeOrder(contract, order)
+        print("order placed for:", stock_symbol, num_shares,"shares buy at $",low_price)
+        ib.sleep(.5)
+        
+        
+        contract = Stock(stock_symbol, 'SMART', 'USD')
+
+        order = Order(action='SELL', orderType="LMT", tif="GTC",
+            totalQuantity=num_shares, lmtPrice=high_price,
+            account=acc_num, transmit=False) 
+
+        ib.placeOrder(contract, order)
+        print("order placed for:", stock_symbol, num_shares,"sell shares", "at $",high_price)
+        ib.sleep(.5)
+        
+        
+ ------------------------------------------------------------------------------
+ 
+ '''
+This gets live stock data from Interactive Brokers on a ticker basis.
+barSizeSetting and durationStr can be modified:
+'''
+from ib_insync import *
+util.startLoop()  # uncomment this line when in a notebook
+
+ib = IB()
+ib.connect('127.0.0.1', 7496)
+
+while True:
+    contract = Stock('SPY', 'SMART','USD')
+    contract2 = Stock('TVIX', 'SMART','USD')
+    
+    bars = ib.reqHistoricalData(contract, endDateTime='', durationStr='600 S',
+    barSizeSetting='5 secs', whatToShow='MIDPOINT', useRTH=True)
+    bars2 = ib.reqHistoricalData(contract2, endDateTime='', durationStr='600 S',
+    barSizeSetting='5 secs', whatToShow='MIDPOINT', useRTH=True)
+
+# convert to pandas dataframe:
+    df = util.df(bars)
+    df2 = util.df(bars2)
+    print("running..")
+    f1 = open('spy.csv','a')
+    f2 = open('tvix.csv','a')
+    
+    f1.write(str(df[['date', 'open', 'high', 'low', 'close']]) )
+    f1.write("")
+    f2.write(str(df2[['date', 'open', 'high', 'low', 'close']]) )
+    f2.write("")
+    ib.sleep(60)
