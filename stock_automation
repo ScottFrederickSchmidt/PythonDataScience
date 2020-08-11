@@ -110,7 +110,7 @@ while True:
 
         sellorder = Order(action=action, orderType=orderType, tif=tif,
                  totalQuantity=num_shares, lmtPrice=price,
-                 account='U1281286', transmit=False)
+                 account='', transmit=False)
 
         selltrade = ib.placeOrder(contract, sellorder)
         print("Order placed...")
