@@ -1,0 +1,35 @@
+# https://medium.datadriveninvestor.com/scraping-stocktwits-with-beautifulsoup-and-selenium-7dbf7f65e714
+import requests
+from bs4 import BeautifulSoup
+import time
+import winsound
+
+stocktwits_trending = requests.get('https://api.stocktwits.com/api/2/streams/trending.json').json()
+stocktwits_trending_tickers = [stocktwits_trending['messages'][index]['symbols'][0]['symbol'] for index in range(len(stocktwits_trending['messages']))]
+trending_stocks = set()
+old_trending= set()
+print("running.");
+
+def getStocks():
+    stocktwits_trending = requests.get('https://api.stocktwits.com/api/2/streams/trending.json').json()
+    stocktwits_trending_tickers = [stocktwits_trending['messages'][index]['symbols'][0]['symbol'] for index in range(len(stocktwits_trending['messages']))]
+    time.sleep(60);
+    print("funct got new stocks");
+    
+while True:
+    for index in stocktwits_trending_tickers:
+        time.sleep(1)
+        x = requests.get('https://www.stocktwits.com/symbol/{}'.format(index))
+        soup = BeautifulSoup(x.text, 'html.parser')
+        texts = soup.findAll(text=True)
+        stock=texts[2][0:4];
+        if stock not in old_trending:
+            old_trending.add(stock);
+            getStocks();
+            print(stock, "NEW TRENDING!! BUY?! ", stock);
+            try:
+                winsound.Beep(400, 3000)
+            except RuntimeError:
+                print("The system is not able to beep the speaker")
+            except ImportError:
+                print("Can't import winsound module")
