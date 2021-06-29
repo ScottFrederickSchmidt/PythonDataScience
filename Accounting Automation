@@ -1,0 +1,71 @@
+#This will compare Access account subtotals to Datatel account subtotals. 
+#A large majority of them should equal most of the time. 
+#Some transactions may not have had a transaction yet, but this helps find the ones that are already balanced.
+#In additon, section 2 will help decide which transactions should have a "D" added in REQ column 
+#A D in REQ column means the real money has had a transaction via Datatel.
+import csv, time
+import pandas as pd
+print("running.")
+start=time.time()
+
+#this will store individual, Access and Datatel accounts with their correct Datatel balances
+balancedAccounts={} #we will use this later in section 2
+
+#Opens Access Excel sheet:
+with open(r'C:\Users\13098\Desktop\AccessFy21.xlsx', 'rb') as afile:
+    accessDF=pd.read_excel(afile) #Access DataFrame
+    #Groups invoice totals by account number
+    accessSubtotals = accessDF.groupby('ACCOUNT NUMBER')['INVOICE AMOUNT'].sum().reset_index()
+    #print(dfaSUB) #
+
+#Opens Datatel Excel Sheet:
+with open(r'C:\Users\13098\Desktop\DatatelFy21.csv') as dfile:
+    dataDF=pd.read_csv(dfile) #Datatel Dataframe
+    dataSubtotals=dataDF.groupby('GL Account')['Ending Amount'].sum().reset_index()
+    dataSubtotals['GL Account'] = dataSubtotals['GL Account'].str.replace('-', '') #gets rid of Hyphens 
+    #print(dfdSUB)
+    
+    for d in dataSubtotals['GL Account']: #checks each account in Datatel...
+        for a in accessSubtotals['ACCOUNT NUMBER']: # checks each account in Access...
+            if d==a: #if Datatel and Access Account are the same then do the following:
+                dRow=dataSubtotals.loc[dataSubtotals['GL Account']==d]
+                aRow=accessSubtotals.loc[accessSubtotals['ACCOUNT NUMBER']==a]
+                dSUM=round(float(dRow['Ending Amount'].values), 2) #datatel Subtotal Number
+                aSUM=round(float(aRow['INVOICE AMOUNT'].values),2) #access Subtotal Number
+                if  dSUM==aSUM: # if Datatel and Access numbers equal do the following:
+                    print(dSUM, " datatel matches access total: ", aSUM, d, " Account Number ", a)
+                    balancedAccounts[d]=dSUM #store the "correct" Datatel number with correct subtotal
+                    #This will be used in section 2 below
+                else: # Datatell and Access account subtotal does NOT equal:
+                    # They do NOT match and further checking will be done by printing the below info:
+                    print(a, "----- check account number----- ", a)
+                    print(dSUM, " datatel DOES NOT match access ", aSUM, ". Difference is: ", round(float(dSUM-aSUM), 2) )
+                    print("check for transaction that may not be in Datatel yet (no D in REQ column) " )
+                    print(a, "----- check account number----- ", a)         
+    print("Finished matching datatel to access accounts in: ", round(time.time()-start, 3), " seconds");
+
+###############################################################################
+# SECTION 2
+# Now we must check the stored, correct balances in the balancedAcc dictionary:
+# ALL these individual Datatel accounts balance Access; 
+# Therefore, each Access column in the REQ should begin with a D 
+# This part will check for exactly that.
+###############################################################################
+print("Starting Section 2!")
+
+with open(r'C:\Users\13098\Desktop\AccessFy21.xlsx', 'rb') as afile:
+    accessDF=pd.read_excel(afile) #Access DataFrame
+    accessDF=accessDF.dropna(subset=['REQ']) #get original access dataframe, drop any blanks in REQ file
+    accessDF = accessDF.loc[accessDF['REQ'].str.contains("D ", case=True)] #keeps only access rows with a "D"
+    accessDsubtotals = accessDF.groupby('ACCOUNT NUMBER')['INVOICE AMOUNT'].sum().reset_index()
+    print(accessDsubtotal)
+    for account in accessDsubtotals['ACCOUNT NUMBER']: # checks each account in Access...
+        accountRow=accessDsubtotals.loc[accessDsubtotals['ACCOUNT NUMBER']==account]
+        accessDtotal=round(float(accountRow['INVOICE AMOUNT'].values),2) #access Subtotal Number
+        if account in balancedAccounts: #only need to check for Datatel Accounts 
+            if accessDtotal==balancedAccounts[account]: 
+                print(account, " is correct and missing not Ds in Access in REQ column")
+            else:
+                print(account, " check for potential missing Ds in Access in REQ column ")
+    print("Completed Section 2 ")
+print("Program Done! Finished in ", round(time.time()-start, 3), " seconds")
