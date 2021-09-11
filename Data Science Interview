@@ -1,0 +1,35 @@
+In Sept 2021, I applied for a Data Science position. I thought some questions were interesting and want to keep record of them for the future:
+-------------------
+
+Describe a specific situation in which you had to apply strong knowledge of SQL query language against a variety of data sets. (1600 characters maximum)*
+
+I have one thousand hours of Python manipulation.
+
+
+
+
+
+--------------------
+
+Please detail where you gained knowledge of statistics and machine learning
+
+Using portfolio123 is machine learning, by using a database of complex finance formulas to predict future returns. 
+
+
+
+
+
+---------------------
+Please describe a complex predictive model that you have developed
+
+At Douglas Capital Management, we used a portfolio123 database to use hundreds of finance formulas to predict future returns. For instance,
+ OperCashFlTTM - CapExTTM + IntExpTTM*(1-TaxRate%TTMInd/100) would be inserted into a database with a hundred other formulas to see which formula is the 
+most relavant. Basic MATLAB functions would be used to help find the statistic relevance of each formula. In 2019 of Q4, our returns for our agressive trading 
+were in the top 10. 
+
+---------------------
+What are the tools you have most commonly used to complete predictive analysis? (1600 characters maximum)*
+
+
+
+
