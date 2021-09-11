@@ -1,5 +1,5 @@
-In Sept 2021, I applied for a Data Science position. I thought some questions were interesting and want to keep record of them for the future. 
--------------------
+In Sept 2021, I applied for a Data Science position. I thought some questions were interesting and want to keep record of them for the future.
+---------------------------
 Describe a specific situation in which you had to apply strong knowledge of SQL query language against a variety of data sets. 
 
 I have one thousand hours training with Python/SQL manipulation, but mostly using Python. At Illinois State University, I invented a Python data science pandas dataFrame automation program that compares thousands of data transactions to 
@@ -16,7 +16,7 @@ https://github.com/ScottFrederickSchmidt/AccountingAutomation
 https://github.com/ScottFrederickSchmidt/Complete-SQL-Bootcamp-and-SQL-DataAnalytics-Course
 
 
---------------------
+----------------------
 Please detail where you gained knowledge of statistics and machine learning
 
 Using portfolio123 is machine learning, by using a database of complex finance formulas to predict future returns. 
@@ -25,20 +25,24 @@ This identified the best candidates that would most likely successfully graduate
 Statitics was used all the time in my Data Science bootcamp:
 https://github.com/ScottFrederickSchmidt/Python-DataScience-Bootcamp
 
----------------------
+------------------------
 Please describe a complex predictive model that you have developed
 
 At Douglas Capital Management, we used a portfolio123 database to use hundreds of finance formulas to predict future returns. For instance,
  OperCashFlTTM - CapExTTM + IntExpTTM*(1-TaxRate%TTMInd/100) would be inserted into a database with a hundred other formulas to see which formula is the 
 most relavant. Basic MATLAB functions would be used to help find the statistic relevance of each formula. In 2019 of Q4, our returns for our agressive trading 
-were in the top 10. 
+were in the top ten. However, I believe in Efficient Market theory and that more risk equals greater returns, so I have left the investment industry. I admit I am not smarter 
+than the stock market on a buy and hold strategy.
 
----------------------
+
+------------------------
 What are the tools you have most commonly used to complete predictive analysis? 
 
 I have mostly used Pandas and Numpy which was used in my Data Science Python bootcamp. This is also the packages that were used at Clark Street Capital 
-and Douglas Capital Management:
-https://github.com/ScottFrederickSchmidt/Python-DataScience-Bootcamp
+and Douglas Capital Management: https://github.com/ScottFrederickSchmidt/Python-DataScience-Bootcamp
+
+Stepwise/Logistic Regression  According to Sheltman, “When we are examining the relationship between a quantitative outcome and a single quantitative explanatory variable, simple linear regression is the most commonly considered analysis method. The simple" part tells us we are only considering a single explanatory variable (Seltman 2015).”  In other words, it analyzes an explanatory variable that is categorical. According to Bougie, it is used when the dependent variable is non metric (2013). 
+According to the Power Point, Logistic Regression selects regression coefficient to force predicted values for Y to be between (0,1), produces S-shaped regression predictions rather than straight line, and selects these coefficient through “Maximum Likelihood” estimation technique.
 
 
 
