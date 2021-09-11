@@ -7,8 +7,8 @@ and then use Python to manipulate data sets. For example, at Illinois State Univ
 thousands of data transactions to Access (SQL) database records which detects unbalanced accounts, new transactions, and human error. When Dr. Walstrom the director of Python for 
 Data Science at Illinois State University saw my project, he indirectly told me to apply for this job. See code for reference: https://github.com/ScottFrederickSchmidt/AccountingAutomation
 
-On my "Amazon" site, I built an entire SQL database that was on the backemd. In addition, it had a basic SQL search and recommendation section using a variety of 
-select and insert statements. I am currently improving SQL data manipluation because it is important when datasets get too complex or big. 
+On my "Amazon" site, I built an entire SQL database that was on the backemd. It is connected on the frontend using PHP. 
+In addition, it has a basic SQL search and recommendation section. I am currently improving SQL data manipluation because it is important when datasets get too complex or big. 
 For example, Excel has a max of around two million rows while Python can have a max out on memory with very large, complex dataFrame. 
 See code for reference: https://github.com/ScottFrederickSchmidt/Amazon-like-site
 
