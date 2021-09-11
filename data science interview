@@ -31,6 +31,10 @@ Statitics was used all the time in my Data Science bootcamp.  The regression lin
 firms funds use. It was also briefly discussed in my Python Data Science course which can be found in the below link:
 https://github.com/ScottFrederickSchmidt/Python-DataScience-Bootcamp
 
+My Python accounting automation projects at Illinois State University could probably be classified as "machine learning". For example, I created a Python pandas script
+that can read data to update a monthly budget report with new information. The other project can predict unbalanced accounts without the need of a human. 
+https://github.com/ScottFrederickSchmidt/AccountingAutomation
+
 At Clark Street Capital, I used machine learning and correlations for loan and risk credit score. 
 My "Amazon" website has a basic recommendation system that makes suggestions based upon current purchases.
 
