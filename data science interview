@@ -19,11 +19,11 @@ See code for reference: https://github.com/ScottFrederickSchmidt/Complete-SQL-Bo
 ----------------------
 Please detail where you gained knowledge of statistics and machine learning
 
-Using portfolio123.com is machine learning, by using a database of complex finance formulas to predict future returns. 
+Using portfolio123.com at Douglas Capital Management is machine learning, by using a database of complex finance formulas to predict future returns. 
 During my MBA program as an ISU graduate assistant, I generated a 95% to 99% r-squared using data analytics/science (depends on adjustment to overfitting). 
 This identified the best candidates that would most likely successfully graduate at ISU. This was the final MBA capstone course, MQM497. 
 
-Statitics was used all the time in my Data Science bootcamp, but I mostly focused on the Python sections because my teacher told me to:
+Statitics was used all the time in my Data Science bootcamp, but I focused more on the Python sections because my teacher told me to:
 https://github.com/ScottFrederickSchmidt/Python-DataScience-Bootcamp
 
 ------------------------
@@ -39,12 +39,12 @@ than the stock market on a buy and hold strategy.
 ------------------------
 What are the tools you have most commonly used to complete predictive analysis? 
 
-At Illinois State University, we used JMP ® Pro Predictive to predict who would likely be the best students to graduate at Illinois State University. 
+At Illinois State University, we used JMP ® Pro Predictive to predict the best students to graduate at Illinois State University. 
 
-I Python imports such as used Numpy, seaborn, and matplotlib.pyplot as imports which was used in my Data Science Python bootcamp.
+For Python imports such as used Numpy, seaborn, and matplotlib.pyplot as imports which was used in my Data Science Python bootcamp. 
 I mostly used pandas dataFrames at Clark Street Capital and Douglas Capital Management.
 
-https://github.com/ScottFrederickSchmidt/Python-DataScience-Bootcamp
+
 
 
 
