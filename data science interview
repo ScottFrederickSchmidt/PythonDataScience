@@ -31,6 +31,8 @@ The regression line I am most fimiliar with is Sector Vector Machine (SVM) becau
 in my Python Data Science course which can be found in the below link:
 https://github.com/ScottFrederickSchmidt/Python-DataScience-Bootcamp
 
+At Douglas Capital Management, I used machine learning and correlations for loan and risk credit score. 
+
 ------------------------
 Please describe a complex predictive model that you have developed
 
@@ -40,6 +42,8 @@ At Douglas Capital Management, I used portfolio123.com database with hundreds of
 In 2019 of Q4, our returns for our agressive trading were in the top ten. However, I believe in efficient market theory and that more risk equals greater returns, 
 so I have left the investment industry. I admit I am not smarter than the stock market on a simple buy and hold strategy on the USA SP500.
 
+At Douglas Capital Management, I used machine learning and correlations to predict loan risk. 
+
 
 ------------------------
 What are the tools you have most commonly used to complete predictive analysis? 
@@ -48,6 +52,8 @@ At Illinois State University, we used JMP ® Pro Predictive to predict the best 
 
 For Python imports such as used Numpy, seaborn, and matplotlib.pyplot as imports which was used in my Data Science Python bootcamp. 
 I mostly used pandas dataFrames at Clark Street Capital and Douglas Capital Management.
+
+At Clark Street Capital, I briefly used Tablaeu. This is what I still use today and am taking a more in depth class to see its full potential.
 
 
 
