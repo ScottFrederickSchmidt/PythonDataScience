@@ -7,7 +7,7 @@ Python to manipulate data sets. For example, at Illinois State University, I inv
 thousands of data transactions to Access (SQL) database records which detects unbalanced accounts, new transactions, and human error. When Dr. Walstrom the director of Python for 
 Data Science saw my project, he indirectly told me to apply for this job. I am currently taking two SQL courses, one at Illinois State University and one on Udemy. 
 On my "Amazon" site, I had a basic search and recommendation section, but got recruited for a Python Data Analyst job so I had to quit the project to focus on my Python studies.
-I am currently trying to understand SQL data manipluation because it is important when datasets get too complex or big. For example, Excel has a max of around two million rows while 
+I am currently improving SQL data manipluation because it is important when datasets get too complex or big. For example, Excel has a max of around two million rows while 
 Python can have a max out on memory with very large, complex dataFrame. 
 
 I am referring to the following SQL/Python code when referring to those these above projects:
