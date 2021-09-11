@@ -2,7 +2,7 @@ In Sept 2021, I applied for a Data Science position. I thought some questions we
 ---------------------------
 Describe a specific situation in which you had to apply strong knowledge of SQL query language against a variety of data sets. 
 
-On my "Amazon" site, I had a basic search and recommendation section, but got recruited for a Python Data Analyst job so I had to quit the project to focus on my Python studies.
+On my "Amazon" site, I had a basic SQL search and recommendation section.
 I am currently improving SQL data manipluation because it is important when datasets get too complex or big. For example, Excel has a max of around two million rows while 
 Python can have a max out on memory with very large, complex dataFrame. I am currently taking two SQL courses, one at Illinois State University and one on Udemy.  
 
