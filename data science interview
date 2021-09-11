@@ -9,7 +9,10 @@ Data Science saw my project, he indirectly told me to apply for this job.
 
 On my "Amazon" site, I had a basic SQL search and recommendation section using a variety of select and insert statements. I am currently improving SQL data manipluation7
 because it is important when datasets get too complex or big. For example, Excel has a max of around two million rows while 
-Python can have a max out on memory with very large, complex dataFrame. I am currently taking two SQL courses, one at Illinois State University and one on Udemy. 
+Python can have a max out on memory with very large, complex dataFrame. 
+
+I am currently taking two SQL courses, one at Illinois State University and one on Udemy. Currently, I am learning to use TABLEAU connect, calculate, and visualize to can create graphs, charts, reports, dashboards. The goal is to help users project their data by offering a huge variety of data visualization tools to choose from.
+Pre-procressing on a database level has better performance. I am also using Leetcode to improve my SQL programming skills.
 
 I am referring to the following SQL/Python code when referring to those these above projects:
 https://github.com/ScottFrederickSchmidt/Amazon-like-site
