@@ -2,8 +2,8 @@ In Sept 2021, I applied for a Data Science position. Here is a list my questions
 ---------------------------
 Describe a specific situation in which you had to apply strong knowledge of SQL query language against a variety of data sets. 
  
-I have one thousand hours training with Python/SQL data manipulation, but mostly using Python. For me personally, I find it easier to use SQL to extract the database and then use
-Python to manipulate data sets. For example, at Illinois State University, I invented a Python data science pandas dataFrame automation program that compares 
+I have one thousand hours training with Python/SQL data manipulation, but mostly using Python. For me personally, I find it easier to use SQL to extract the database 
+and then use Python to manipulate data sets. For example, at Illinois State University, I invented a Python data science pandas dataFrame automation program that compares 
 thousands of data transactions to Access (SQL) database records which detects unbalanced accounts, new transactions, and human error. When Dr. Walstrom the director of Python for 
 Data Science saw my project, he indirectly told me to apply for this job. See code for reference: https://github.com/ScottFrederickSchmidt/AccountingAutomation
 
@@ -20,21 +20,25 @@ See code for reference: https://github.com/ScottFrederickSchmidt/Complete-SQL-Bo
 Please detail where you gained knowledge of statistics and machine learning
 
 Using portfolio123.com at Douglas Capital Management is machine learning, by using a database of complex finance formulas to predict future returns. 
+We had simple MATLAB functions setup to help determine the statitics of the best results.
+
 During my MBA program as an ISU graduate assistant, I generated a 95% r-squared using data analytics (depends on adjustment to overfitting). 
 This identified the best candidates that would most likely successfully graduate at ISU. This was the final MBA capstone course, MQM497. 
 
 During my MBA program at Illinois State University, I gained a vast amount of knowledge with using statics with business practices. 
-Statitics was used all the time in my Data Science bootcamp, but I focused more on the Python sections because my teacher told me to:
+Statitics was used all the time in my Data Science bootcamp, but I focused more on the Python sections because my teacher told me to.
+The regression line I am most fimiliar with is Sector Vector Machine (SVM) because that is what bigger investment firms funds use. It was also briefly discussed 
+in my Python Data Science course which can be found in the below link:
 https://github.com/ScottFrederickSchmidt/Python-DataScience-Bootcamp
 
 ------------------------
 Please describe a complex predictive model that you have developed
 
-At Douglas Capital Management, we used a portfolio123 database to use hundreds of finance formulas to predict future returns. For instance,
- OperCashFlTTM - CapExTTM + IntExpTTM*(1-TaxRate%TTMInd/100) would be inserted into a database with a hundred other formulas to see which formula is the 
-most relavant. Basic MATLAB functions would be used to help find the statistic relevance of each formula. In 2019 of Q4, our returns for our agressive trading 
-were in the top ten. However, I believe in Efficient Market theory and that more risk equals greater returns, so I have left the investment industry. I admit I am not smarter 
-than the stock market on a buy and hold strategy.
+At Douglas Capital Management, I used portfolio123.com database with hundreds of finance formulas to predict future returns. For instance,
+ OperCashFlTTM - CapExTTM + IntExpTTM*(1-TaxRate%TTMInd/100) would be inserted into a database with an optimization process to see how this one 
+ formula can effect future returns. We also had to account for missing and/or overfitting data. Basic MATLAB functions would be used to help find the statistic relevance of each formula. 
+In 2019 of Q4, our returns for our agressive trading were in the top ten. However, I believe in efficient market theory and that more risk equals greater returns, 
+so I have left the investment industry. I admit I am not smarter than the stock market on a simple buy and hold strategy on the USA SP500.
 
 
 ------------------------
