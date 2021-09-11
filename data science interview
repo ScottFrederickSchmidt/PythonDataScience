@@ -2,23 +2,18 @@ In Sept 2021, I applied for a Data Science position. I thought some questions we
 ---------------------------
 Describe a specific situation in which you had to apply strong knowledge of SQL query language against a variety of data sets. 
  
-I have one thousand hours training with Python/SQL manipulation, but mostly using Python. For me personally, I find it easier to use SQL to extract the database and then use
+I have one thousand hours training with Python/SQL data manipulation, but mostly using Python. For me personally, I find it easier to use SQL to extract the database and then use
 Python to manipulate data sets. For example, at Illinois State University, I invented a Python data science pandas dataFrame automation program that compares 
 thousands of data transactions to Access (SQL) database records which detects unbalanced accounts, new transactions, and human error. When Dr. Walstrom the director of Python for 
-Data Science saw my project, he indirectly told me to apply for this job. 
+Data Science saw my project, he indirectly told me to apply for this job. See code for reference: https://github.com/ScottFrederickSchmidt/AccountingAutomation
 
 On my "Amazon" site, I had a basic SQL search and recommendation section using a variety of select and insert statements. I am currently improving SQL data manipluation7
-because it is important when datasets get too complex or big. For example, Excel has a max of around two million rows while 
-Python can have a max out on memory with very large, complex dataFrame. 
+because it is important when datasets get too complex or big. For example, Excel has a max of around two million rows while Python can have a max out on memory with very large,
+complex dataFrame. See code for reference: https://github.com/ScottFrederickSchmidt/Amazon-like-site
 
 I am currently taking two SQL courses, one at Illinois State University and one on Udemy. Currently, I am learning to use TABLEAU connect, calculate, and visualize to can create graphs, charts, reports, dashboards. The goal is to help users project their data by offering a huge variety of data visualization tools to choose from.
-Pre-procressing on a database level has better performance. I am also using Leetcode to improve my SQL programming skills.
-
-I am referring to the following SQL/Python code when referring to those these above projects:
-https://github.com/ScottFrederickSchmidt/Amazon-like-site
-https://github.com/ScottFrederickSchmidt/Project-Euler-Python
-https://github.com/ScottFrederickSchmidt/Complete-SQL-Bootcamp-and-SQL-DataAnalytics-Course
-https://github.com/ScottFrederickSchmidt/AccountingAutomation
+Pre-procressing on a database level has better performance. I am also using Leetcode to improve my SQL programming skills. 
+See code for reference: https://github.com/ScottFrederickSchmidt/Complete-SQL-Bootcamp-and-SQL-DataAnalytics-Course
 
 
 ----------------------
