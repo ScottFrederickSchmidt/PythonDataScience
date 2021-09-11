@@ -26,9 +26,8 @@ During my MBA program as an ISU graduate assistant, I generated a 95% r-squared 
 This identified the best candidates that would most likely successfully graduate at ISU. This was the final MBA capstone course, MQM497. 
 
 During my MBA program at Illinois State University, I gained a vast amount of knowledge with using statics with business practices. 
-Statitics was used all the time in my Data Science bootcamp, but I focused more on the Python sections because my teacher told me to.
-The regression line I am most fimiliar with is Sector Vector Machine (SVM) because that is what bigger investment firms funds use. It was also briefly discussed 
-in my Python Data Science course which can be found in the below link:
+Statitics was used all the time in my Data Science bootcamp.  The regression line I am most fimiliar with is Sector Vector Machine (SVM) because that is what bigger investment
+firms funds use. It was also briefly discussed in my Python Data Science course which can be found in the below link:
 https://github.com/ScottFrederickSchmidt/Python-DataScience-Bootcamp
 
 At Clark Street Capital, I used machine learning and correlations for loan and risk credit score. 
@@ -43,8 +42,11 @@ At Douglas Capital Management, I used portfolio123.com database with hundreds of
 In 2019 of Q4, our returns for our agressive trading were in the top ten. However, I believe in efficient market theory and that more risk equals greater returns, 
 so I have left the investment industry. I admit I am not smarter than the stock market on a simple buy and hold strategy on the USA SP500.
 
-At Clark Street Capital, I used machine learning and correlations to predict loan risk. 
+During my MBA program as an ISU graduate assistant, I generated a 95% r-squared using data analytics (depends on adjustment to overfitting). 
+This identified the best candidates that would most likely successfully graduate at ISU. This was the final MBA capstone course, MQM497. 
 
+At Clark Street Capital, I used machine learning and correlations to predict loan risk. 
+My "Amazon" website has a basic recommendation system that would predict what purchases the customer might want to buy next.
 
 ------------------------
 What are the tools you have most commonly used to complete predictive analysis? 
