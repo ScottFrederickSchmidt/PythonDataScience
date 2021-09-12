@@ -39,8 +39,9 @@ https://github.com/ScottFrederickSchmidt/Python-DataScience-Bootcamp
 At Clark Street Capital, I used machine learning and correlations for loan and risk credit score. 
 My "Amazon" website has a basic recommendation system that makes suggestions based upon current purchases.
 
-My Python accounting automation projects at Illinois State University could probably be classified as "machine learning". For example, I created a Python pandas script
-that can read data to update a monthly budget report with new information. The other project can predict unbalanced accounts without the need of a human. 
+My Python accounting automation projects at Illinois State University could be closely related to "machine learning" but not to an exact fit.
+For example, I created a Python pandas script that can read data to update a monthly budget report with new information.
+The other project can predict unbalanced accounts without the need of a human. 
 https://github.com/ScottFrederickSchmidt/AccountingAutomation
 
 ------------------------
@@ -76,7 +77,7 @@ For Python, I have used Pandasm Numpy, seaborn, sklearn, and matplotlib.pyplot a
 I mostly used pandas dataFrames at Clark Street Capital and Douglas Capital Management.
 
 At Clark Street Capital, I briefly used Tablaeu. This is what I still use today and am taking a more in depth class to see its full potential.
-
+I have briefly used Power BI and have purchased a Udemy course on it. I plan on finishing that course during my 2 weeks off over winter break!
 
 
 
