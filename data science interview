@@ -7,9 +7,9 @@ and then use Python to manipulate data sets. For example, at Illinois State Univ
 thousands of data transactions to Access (SQL) database records which detects unbalanced accounts, new transactions, and human error. When Dr. Walstrom the director of Python for 
 Data Science at Illinois State University saw my project, he indirectly told me to apply for this job. See code for reference: https://github.com/ScottFrederickSchmidt/AccountingAutomation
 
-On my "Amazon" site, I built an entire SQL database that was on the backemd. It is connected on the frontend using PHP. 
-In addition, it has a basic SQL search and recommendation section. I am currently improving SQL data manipluation because it is important when datasets get too complex or big. 
-For example, Excel has a max of around two million rows while Python can have a max out on memory with very large, complex dataFrame. 
+On my "Amazon" site, I built an entire SQL database that was on the backemd. It is connected on the frontend using PHP. The basic SQL termnology were all used for this project
+(i.e. select, insert, update, delete). In addition, it has a basic SQL search and recommendation section. I am currently improving SQL data manipluation because 
+it is important when datasets get too complex or big. For example, Excel has a max of around two million rows while Python can have a max out on memory with very large, complex dataFrame. 
 See code for reference: https://github.com/ScottFrederickSchmidt/Amazon-like-site
 
 I am currently taking two SQL courses, one at Illinois State University and one on Udemy. Currently, I am learning to use TABLEAU connect, calculate, and visualize to can create graphs, charts, reports, dashboards. The goal is to help users project their data by offering a huge variety of data visualization tools to choose from.
@@ -54,8 +54,7 @@ In conclusion, Pell Grants and amount of initiated contacts are the two biggest 
 These two factors alone can make a fairly good prediction on whether a student enrolls at the university or not. 
 Neural Network  According to Chaughan, “Neural networks are non-linear statistical data modeling tools. They can be used to model complex relationships between inputs and outputs or to find patterns in data.
 Using neural networks as a tool, data warehousing firms are harvesting information from datasets in the process known as data mining.” 
-Neural networks help the user make more informed decisions. .
-Our R-Squared was .99 which is shows a very strong correlation; however, this might be extremely high because of overfitting. 
+Neural networks help the user make more informed decisions. Our R-Squared was .99 which is shows a very strong correlation; however, this might be extremely high because of overfitting. 
 In conclusion, neural networks show that undecided majors, Pell Grant, distance from ISU, # of initiated events, family income median, total consumer expenditures, high school low income percentage, and high school GPA are the major factors in whether a student enrolls at Illinois State University or not. 
 Confirmatory Analysis: The purpose of a confirmatory analysis is to test whether the data fit a hypothesized measurement model. 
 In other words, it tests whether measures of a factor are consistent with a researcher's understanding of a factor. 
@@ -69,7 +68,7 @@ What are the tools you have most commonly used to complete predictive analysis?
 
 At Illinois State University, we used JMP ® Pro Predictive to predict the best students to graduate at Illinois State University. 
 
-For Python, I have used Pandasm Numpy, seaborn, and matplotlib.pyplot as imports.
+For Python, I have used Pandasm Numpy, seaborn, sklearn, and matplotlib.pyplot as imports.
 I mostly used pandas dataFrames at Clark Street Capital and Douglas Capital Management.
 
 At Clark Street Capital, I briefly used Tablaeu. This is what I still use today and am taking a more in depth class to see its full potential.
