@@ -21,7 +21,8 @@ See code for reference: https://github.com/ScottFrederickSchmidt/Complete-SQL-Bo
 Please detail where you gained knowledge of statistics and machine learning
 
 Using portfolio123.com at Douglas Capital Management is machine learning, by using a database of complex finance formulas to predict future returns. 
-We had simple MATLAB functions setup to help determine the statitics of the best results.
+We had simple MATLAB functions setup to help determine the statitics of the best results. One would have to consider missing data and overfitting for using
+a projected return model.
 
 During my MBA program as an ISU graduate assistant, I generated a 95% r-squared using data analytics (depends on adjustment to overfitting). 
 This identified the best candidates that would most likely successfully graduate at ISU. This was the final MBA capstone course, MQM497. 
