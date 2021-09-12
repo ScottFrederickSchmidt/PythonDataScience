@@ -31,12 +31,12 @@ Statitics was used all the time in my Data Science bootcamp.  The regression lin
 firms funds use. It was also briefly discussed in my Python Data Science course which can be found in the below link:
 https://github.com/ScottFrederickSchmidt/Python-DataScience-Bootcamp
 
+At Clark Street Capital, I used machine learning and correlations for loan and risk credit score. 
+My "Amazon" website has a basic recommendation system that makes suggestions based upon current purchases.
+
 My Python accounting automation projects at Illinois State University could probably be classified as "machine learning". For example, I created a Python pandas script
 that can read data to update a monthly budget report with new information. The other project can predict unbalanced accounts without the need of a human. 
 https://github.com/ScottFrederickSchmidt/AccountingAutomation
-
-At Clark Street Capital, I used machine learning and correlations for loan and risk credit score. 
-My "Amazon" website has a basic recommendation system that makes suggestions based upon current purchases.
 
 ------------------------
 Please describe a complex predictive model that you have developed
@@ -49,8 +49,18 @@ so I have left the investment industry. I admit I am not smarter than the stock 
 
 During my MBA program as an ISU graduate assistant, I generated a 95% r-squared using data analytics (depends on adjustment to overfitting). 
 This identified the best candidates that would most likely successfully graduate at ISU. This was the final MBA capstone course, MQM497. 
+In conclusion, Pell Grants and amount of initiated contacts are the two biggest factors in whether a student enrolled at the university or not. 
+These two factors alone can make a fairly good prediction on whether a student enrolls at the university or not. 
+Neural Network  According to Chaughan, “Neural networks are non-linear statistical data modeling tools. They can be used to model complex relationships between inputs and outputs or to find patterns in data.
+Using neural networks as a tool, data warehousing firms are harvesting information from datasets in the process known as data mining.” 
+Neural networks help the user make more informed decisions. .
+Our R-Squared was .99 which is shows a very strong correlation; however, this might be extremely high because of overfitting. 
+In conclusion, neural networks show that undecided majors, Pell Grant, distance from ISU, # of initiated events, family income median, total consumer expenditures, high school low income percentage, and high school GPA are the major factors in whether a student enrolls at Illinois State University or not. 
+Confirmatory Analysis: The purpose of a confirmatory analysis is to test whether the data fit a hypothesized measurement model. 
+In other words, it tests whether measures of a factor are consistent with a researcher's understanding of a factor. 
+This test confirms that ACT, GPA, major, Pell Grant, and # of initiated events make a significant difference in students enrolling at Illinois State University.  
 
-At Clark Street Capital, I used machine learning and correlations to predict loan risk. 
+At Clark Street Capital, I used basic machine learning and correlations to predict loan risk. 
 My "Amazon" website has a basic recommendation system that would predict what purchases the customer might want to buy next.
 
 ------------------------
