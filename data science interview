@@ -1,8 +1,6 @@
 In Sept 2021, here was a list of questions/answers for a data science job:
 ---------------------------
-Describe a specific situation in which you had to apply strong knowledge of SQL query language against a variety of data sets. 
- 
-I have one thousand hours training with Python/SQL data manipulation, but mostly using Python. For me personally, I find it easier to use SQL to extract the database 
+Describe a specific situation in which you had to apply strong knowledge of Python/SQL. I have one thousand hours training with SQL data manipulation, but mostly using Python. For me personally, I find it easier to use SQL to extract the database 
 and then use Python to manipulate data sets. For example, at Illinois State University, I invented a Python data science pandas dataFrame automation program that compares 
 thousands of data transactions to Access (SQL) database records which detects unbalanced accounts, new transactions, and human error. When Dr. Walstrom the director of Python for 
 Data Science at Illinois State University saw my project, he indirectly told me to apply for this job. See code for reference: https://github.com/ScottFrederickSchmidt/AccountingAutomation
