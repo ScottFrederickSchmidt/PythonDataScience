@@ -61,40 +61,40 @@ What tools have you used to create data visualizations?
 I have mostly used Tablaeu and Excel for visualations. In a recent data science
 poll on LinkedIn I saw Excel was ranked as being "highly underated" for data science. Because I have a webdevelopment background,
 I could also easily display graphs on the Illinois State University website if needed. I have used API's with Javascript such
-as https://www.chartjs.org/docs that are easy to implement. 
+as https://www.chartjs.org/docs that are easy to implement.
 
 
 
 6. Please describe a presentation that you have completed to present the results of a predictive model you developed.
-
 At Illinois State University, I Invented a Python data science pandas dataFrame automation program that 
 compares thousands of data transactions to database records which detects unbalanced accounts, new transactions, and human error: 
 https://github.com/ScottFrederickSchmidt/AccountingAutomation
 
 I have presented this project to several programming professors and directors because I have wanted to try to implement my 
-program on a more global basis. I truly believe my program can save ISU over a hundred thousand dollars a year if correctly implemented. 
+program on a more frequent and global basis. I truly believe my program can save ISU over a hundred thousand dollars a year if correctly implemented. 
 It will also make the life of an accountant more enjoyable. 
 
 
 7. Have you ever had to “sell” an idea to your co-workers, supervisor or customers? How did you do it?  
 Great question! I think my data science accounting automation software I have developed would save Illinois State University, 
-if inmplemented, but I have not had the confidence to "sell" my idea yet. Right now, I am still relatively new to the university, so I am trying
-to build up a better reputation before trying to implement such a big process.
+if inmplemented correctly, well over a hunrdred thousand dollars a year. But I have not had the confidence to "sell" my idea yet.
 
 When I did invent my automation program, I did request permission to use the data first. I also made sure that no confidential information
-would accidently be leaked. I also had a simple prototype built before hand so I had very high confidence the program would work.
+would accidently be leaked. I also had a prototype using fake data built before hand so I had very high confidence the program would work.
 I am always prepared and professional.
 
 
 8. During analysis, how do you treat missing values?
-First off, if there is not a lot of data, one should consider not using that data at all. For instance, when analyzing microcap stocks at Douglas Capital Management 
-using portfolio123.com, sometimes there was not a lot of data for more unusually common financial formulas. When one would plot the data, it was obvious
-because the graph would have "buckets" that were completely missing. 
-
 If there was only some missing data, one could easily use a Python script to delete values that do not have data. 
 A third choice is to simply fill the missing data with a 0. However, this can easily disort the data.
 Most commonly, is one can use predicitive scores to get an "average" of what the missing data probably is using a 
 simple regression line. This is the best common practice but can also take the most time.
+
+Lastly, if there is not a lot of data points with lots of missing data, one should consider not using that data at all. 
+For instance, when analyzing microcap stocks at Douglas Capital Management 
+using portfolio123.com, sometimes there was not a lot of data points for certain financial formulas.
+When one would plot the data, it was obvious because the graph would have "buckets" that were completely missing. 
+These formulas were then removed completely from the optimization process.
 
 
 9. What are the tools you have most commonly used to complete predictive analysis?  Which one is your favorite?   
@@ -107,5 +107,5 @@ an easy way to explain data to an individual who may not have a statistics and c
 First off, hello Kevin! Long time no see since being in the ISU MBA program together. 
 Taking this job means more to me than simply moving numbers around virtually with Python/SQL. 
 I hope taking the Python Data Science position gives inspiration for every ISU student to graduate because I too am an ISU graduate. 
-On my first-year anniversary as a Python data scientist, I plan to donate 3% of my first year's salary to an ISU Python/CS student.
+On my first-year anniversary as a Python data scientist, I plan to donate 3% of my first year's salary to an ISU Python student as a scholarship.
 
