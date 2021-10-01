@@ -69,12 +69,18 @@ https://github.com/ScottFrederickSchmidt/Complete-SQL-Bootcamp-and-SQL-DataAnaly
 What tools have you used to create data visualizations?  
 I have mostly used Tablaeu and Excel for visualations. In a recent data science
 poll on LinkedIn I saw Excel was ranked as being "highly underated" for data science. Because I have a webdevelopment background,
-I could also easily display graphs on the Illinois State University website if needed. I have used API's with Javascript such
-as https://www.chartjs.org/docs that are easy to implement.
+I could also display graphs on the Illinois State University website if needed with Javascript such
+as https://www.chartjs.org/docs.
 
 
 
 6. Please describe a presentation that you have completed to present the results of a predictive model you developed.
+
+At Clark Street Capital, I had to help package and sell at $42 million dollar non-performing commercial real estate loan bundled together 
+as a morgaged-back security through a major United States bank. Based upon our predictive analysis, the goal was to sell the loan
+around eighty cents on the dollar. I had to help present this package over phone to around over a hundred banking clients across
+the United States.
+
 At Illinois State University, I invented a Python data science pandas dataFrame automation program that 
 compares thousands of data transactions to database records which detects unbalanced accounts, new transactions, and human error: 
 https://github.com/ScottFrederickSchmidt/AccountingAutomation
