@@ -22,7 +22,7 @@ compares thousands of data transactions to database records which detects unbala
 https://github.com/ScottFrederickSchmidt/AccountingAutomation
 
 This in itself was a very important task because it involves accounting. If the program is not 100% accurate, one could
-get involved in an audit that could cost the company thousands of dollars and a reputation. In accounting, one must be exact.
+get involved in an audit that could cost the company thousands of dollars and a bad reputation. In accounting, one must be exact.
 There are no guesses or predictions. Accuracy and attention to detail is of highest importance.
 
 
@@ -31,8 +31,7 @@ There are no guesses or predictions. Accuracy and attention to detail is of high
 At Douglas Capital Management, I used portfolio123.com database with hundreds of finance formulas to predict future returns. For instance,
  OperCashFlTTM - CapExTTM + IntExpTTM*(1-TaxRate%TTMInd/100) would be inserted into a database with an optimization process to see how this one 
  formula can affect future returns. We also had to account for missing and/or overfitting data. Basic MATLAB functions would be used to help find the statistic relevance of each formula. 
-In 2019 of Q4, our returns for our aggressive trading returns were in the top ten. However, I believe in efficient market theory and that more risk equals greater returns, 
-so I have left the investment industry. I admit I am not smarter than the stock market on a simple buy and hold strategy on the USA SP500.
+In 2019 of Q4, our returns for our aggressive trading returns were in the top ten. 
 
 During my MBA program as an ISU graduate assistant, I generated a 95% r-squared using data analytics (depends on adjustment to overfitting). 
 This identified the best candidates that would most likely successfully graduate at ISU. This was the final MBA capstone course, MQM497. 
