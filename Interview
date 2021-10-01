@@ -63,7 +63,7 @@ My "Amazon" website has a basic recommendation system that would predict what pu
 
 4. In terms of SQL syntax or query structure, what are some things you focus on when writing a query to ensure it functions as efficiently as possible?
 
-The larger the table, the longer it takes to read the data. 
+The larger the table, the longer it takes to read the data. One should try to only use the columns needed. 
 Therefore, one must not use the * operator. Including column names enhances performance.
 It also makes the code more reusable in the future (if more columns get added later).
 One should not repeat code. In my automation project, I made sure to never use a line twice.
