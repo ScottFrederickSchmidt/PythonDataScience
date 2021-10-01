@@ -86,7 +86,7 @@ I am always prepared and professional.
 
 
 8. During analysis, how do you treat missing values?
-First off, if there is not a lot of data, one should consider not using that data. For instance, when analyzing microcap stocks at Douglas Capital Management 
+First off, if there is not a lot of data, one should consider not using that data at all. For instance, when analyzing microcap stocks at Douglas Capital Management 
 using portfolio123.com, sometimes there was not a lot of data for more unusually common financial formulas. When one would plot the data, it was obvious
 because the graph would have "buckets" that were completely missing. 
 
@@ -100,11 +100,11 @@ simple regression line. This is the best common practice but can also take the m
 Python Pandas dataFrame is by far my favorite tool. It is what I used to automate accounting anaytics predictions at Illinois State University,
 financial automation at Douglas Capital Management, and predictive anaytics at Clark Street Capital. 
 I also love using Tablaeu because it is simple to use and has been well adapted by Salesforce. Tablaeu gives a data scientist
-an easy way to explain data to an individual who may not have an intensive statistics and coding background.
+an easy way to explain data to an individual who may not have a statistics and coding background.
 
 
 First off, hello Kevin! Long time no see since being in the ISU MBA program together. 
 Taking this job means more to me than simply moving numbers around virtually with Python/SQL. 
 I hope taking the Python Data Science position gives inspiration for every ISU student to graduate because I too am an ISU graduate. 
-On my first-year anniversary as a Python data scientist, I plan to donate 3% of my first year's salary to an ISU Python/CS student. 
+On my first-year anniversary as a Python data scientist, I plan to donate 3% of my first year's salary to an ISU Python/CS student.
 
