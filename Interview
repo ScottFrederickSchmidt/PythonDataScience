@@ -13,7 +13,11 @@ a master’s degree in statistics. I want to be able to be a team player and bet
 
 
 2.	Data extrapolation and analysis are critical to accurate models being developed.  Please describe an example of data extract and analysis that you have completed.
-
+At Illinois State University, I Invented a Python data science pandas dataFrame automation program that 
+compares thousands of data transactions to database records which detects unbalanced accounts, new transactions, and human error.
+This in itself was a very important task because it involves accounting. If the program is not 100% accurate, one could
+get involved in an audit that could cost the company thousands of dollars and a reputation. In accounting, one must be exact.
+There are no guesses or predictions. Therefore, I would say, that I take with the highest importance of being accurate. 
 
 
 3.	Please describe the experience you have creating predictive models.
