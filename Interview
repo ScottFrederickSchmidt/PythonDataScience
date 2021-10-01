@@ -17,7 +17,7 @@ a master’s degree in statistics. I want to be able to be a team player and bet
 
 
 2. Data extrapolation and analysis are critical to accurate models being developed.  Please describe an example of data extract and analysis that you have completed.
-At Illinois State University, I Invented a Python data science pandas dataFrame automation program that 
+At Illinois State University, I invented a Python data science pandas dataFrame automation program that 
 compares thousands of data transactions to database records which detects unbalanced accounts, new transactions, and human error: 
 https://github.com/ScottFrederickSchmidt/AccountingAutomation
 
