@@ -31,7 +31,7 @@ In conclusion, neural networks show that undecided majors, Pell Grant, distance 
 high school low income percentage, and high school GPA are the major factors in whether a student enrolls at Illinois State University or not. 
 The test confirms that ACT, GPA, major, Pell Grant, and # of initiated events make a significant difference in students enrolling at Illinois State University.  
 
-At Clark Street Capital, I used basic machine learning and correlations to predict loan risk. 
+At Clark Street Capital, I used machine learning and correlations to predict loan risk. 
 My "Amazon" website has a basic recommendation system that would predict what purchases the customer might want to buy next.
 
 
@@ -66,22 +66,23 @@ as https://www.chartjs.org/docs that are easy to implement.
 
 
 6. Please describe a presentation that you have completed to present the results of a predictive model you developed.
-At Illinois State University, I Invented a Python data science pandas dataFrame automation program that 
+At Illinois State University, I invented a Python data science pandas dataFrame automation program that 
 compares thousands of data transactions to database records which detects unbalanced accounts, new transactions, and human error: 
 https://github.com/ScottFrederickSchmidt/AccountingAutomation
 
 I have presented this project to several programming professors and directors because I have wanted to try to implement my 
 program on a more frequent and global basis. I truly believe my program can save ISU over a hundred thousand dollars a year if correctly implemented. 
-It will also make the life of an accountant more enjoyable. 
+It will also make the life of an accountant more enjoyable. Presenting programming code is more of a challenge than I originally thought.
+For example, some coding professors did not know how my program worked and instead wrote me a recommendation for a data science position.
 
 
 7. Have you ever had to “sell” an idea to your co-workers, supervisor or customers? How did you do it?  
 Great question! I think my data science accounting automation software I have developed would save Illinois State University, 
 if inmplemented correctly, well over a hunrdred thousand dollars a year. But I have not had the confidence to "sell" my idea yet.
 
-When I did invent my automation program, I did request permission to use the data first. I also made sure that no confidential information
-would accidently be leaked. I also had a prototype using fake data built before hand so I had very high confidence the program would work.
-I am always prepared and professional.
+I also had a prototype using fake data built before hand so I had very high confidence the program would work.
+I am always prepared and professional. When I did invent my automation program, I did request permission to use the data first.
+I also made sure that no confidential information would accidently be leaked.
 
 
 8. During analysis, how do you treat missing values?
