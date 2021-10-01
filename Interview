@@ -99,10 +99,10 @@ https://github.com/ScottFrederickSchmidt/PredictivePythonModeling
 Great question! I think my data science accounting automation software I have developed would save Illinois State University, 
 if inmplemented correctly, well over a hunrdred thousand dollars a year. But I have not had the confidence to "sell" my idea.
 
-A prepared professional prototype using fake data was built before hand so I had confidence the program would work.
+A prepared prototype using fake data was built before hand so I had confidence the program would work.
 When I did invent my automation program, I did request permission to use the data first.
 I also made sure that no confidential information would accidently be leaked.
-
+The idea was successfully implemented with highest honors. 
 
 8. During analysis, how do you treat missing values?
 The simple, easy way to treat missing values is to simply delete any data row that has a missing value using a simple Python script such as
@@ -127,4 +127,4 @@ on Udemy and by my data science mentor, Sukamar Lagapati.
 
 Salesforce has done a fantastic job with their implementation of Tablaeu. Tablaeu gives a data scientist
 an easy way to explain data to an individual who may not have a statistics or coding background. 
-
+In fact, Tablaeu makes it easy for even developers to understand data and make anaytical decisions.
