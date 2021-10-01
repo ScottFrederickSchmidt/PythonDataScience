@@ -82,13 +82,14 @@ For example, some coding professors did not know how my program worked and inste
 Great question! I think my data science accounting automation software I have developed would save Illinois State University, 
 if inmplemented correctly, well over a hunrdred thousand dollars a year. But I have not had the confidence to "sell" my idea yet.
 
-I also had a prototype using fake data built before hand so I had very high confidence the program would work.
+A prototype using fake data built before hand so I had very high confidence the program would work.
 I am always prepared and professional. When I did invent my automation program, I did request permission to use the data first.
 I also made sure that no confidential information would accidently be leaked.
 
 
 8. During analysis, how do you treat missing values?
-If there was only some missing data, one could easily use a Python script to delete values that do not have data. 
+The simple, easy way to treat missing values is to simply delete any data row that has a missing value.
+However, this can give less data points to make accurate predictions.
 A third choice is to simply fill the missing data with a 0. However, this can easily disort the data.
 Most commonly, is one can use predicitive scores to get an "average" of what the missing data probably is using a 
 simple regression line. This is the best common practice but can also take the most time.
