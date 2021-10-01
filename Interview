@@ -30,7 +30,8 @@ There are no guesses or predictions. Accuracy and attention to detail is of high
 
 At Douglas Capital Management, I used portfolio123.com database with hundreds of finance formulas to predict future returns. For instance,
  OperCashFlTTM - CapExTTM + IntExpTTM*(1-TaxRate%TTMInd/100) would be inserted into a database with an optimization process to see how this one 
- formula can affect future returns. We also had to account for missing and/or overfitting data. Basic MATLAB functions would be used to help find the statistic relevance of each formula. 
+ formula can affect future returns. We also had to account for missing and/or overfitting data. 
+Basic MATLAB functions would be used to help find the statistic relevance of each formula. 
 In 2019 of Q4, our returns for our aggressive trading returns were in the top ten. 
 
 During my MBA program as an ISU graduate assistant, I generated a 95% r-squared using data analytics (depends on adjustment to overfitting). 
@@ -45,7 +46,6 @@ The test confirms that ACT, GPA, major, Pell Grant, and # of initiated events ma
 
 At Clark Street Capital, I used basic machine learning and correlations to predict loan risk. 
 My "Amazon" website has a basic recommendation system that would predict what purchases the customer might want to buy next.
-
 
 
 4. In terms of SQL syntax or query structure, what are some things you focus on when writing a query to ensure it functions as efficiently as possible?
@@ -73,14 +73,14 @@ as https://www.chartjs.org/docs that are easy to implement.
 
 
 6. Please describe a presentation that you have completed to present the results of a predictive model you developed.
+
 At Illinois State University, I Invented a Python data science pandas dataFrame automation program that 
 compares thousands of data transactions to database records which detects unbalanced accounts, new transactions, and human error: 
 https://github.com/ScottFrederickSchmidt/AccountingAutomation
 
-I have presented this project to several coding professors and directors because I have wanted to try to implement my 
-program on a more global basis. I truly believe my program can save a hundred thousand dollars a year. 
-It will also make the life of an accountant more enjoyable. However, I have not completely figured out how to do this
-and would love the data science team to potentially help me. 
+I have presented this project to several programming professors and directors because I have wanted to try to implement my 
+program on a more global basis. I truly believe my program can save ISU over a hundred thousand dollars a year if correctly implemented. 
+It will also make the life of an accountant more enjoyable. 
 
 
 7. Have you ever had to “sell” an idea to your co-workers, supervisor or customers? How did you do it?  
