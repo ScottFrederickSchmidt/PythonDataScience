@@ -42,7 +42,14 @@ as https://www.chartjs.org/docs that are easy to implement.
 
 
 6. Please describe a presentation that you have completed to present the results of a predictive model you developed.
+At Illinois State University, I Invented a Python data science pandas dataFrame automation program that 
+compares thousands of data transactions to database records which detects unbalanced accounts, new transactions, and human error: 
+https://github.com/ScottFrederickSchmidt/AccountingAutomation
 
+I have presented this project to several coding professors and directors because I have wanted to try to implement my 
+program on a more global basis. I truly believe my program can save a hundred thousand dollars a year. 
+It will also make the life of an accountant more enjoyable. However, I have not completely figured out how to do this
+and would love the data science team to potentially help me. 
 
 
 7. Have you ever had to “sell” an idea to your co-workers, supervisor or customers? How did you do it?  
