@@ -43,7 +43,7 @@ OperCashFlTTM - CapExTTM + IntExpTTM*(1-TaxRate%TTMInd/100) would be inserted in
 formula can affect future returns. More important formulas such as annual growth rate would have a higher significance for returns.
 We also had to account for missing data. On occasion, missing data was completely deleted. But the majority of the time,
 missing data was filled in using a estimate by a regression line. Basic MATLAB functions would be used to help find the statistic relevance of each formula. 
-In 2019, our returns were in the top ten. My own personal returns 
+In 2019, our returns were in the top ten. 
 
 During my MBA program as an ISU graduate assistant, I generated a 95% r-squared using data analytics (depends on adjustment to overfitting). 
 This identified the best candidates that would most likely successfully graduate at ISU. This was the final MBA capstone course, MQM497. 
@@ -63,6 +63,8 @@ My "Amazon" website has a basic recommendation system that would predict what pu
 The larger the table, the longer it takes to read the data. 
 Therefore, one must not use the * operator. Including column names enhances performance.
 It also makes the code more reusable in the future (if more columns get added later).
+One should not repeat code. In my automation project, I made sure to never use a line twice.
+I noticed I read the same pandas dataFa
 Use NOT EXISTS should be used instead of NOT IN. Using NOT EXISTS will not do comparision with nulls.
 
 
