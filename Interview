@@ -35,9 +35,10 @@ There are no guesses or predictions. Accuracy and attention to detail is of high
 
 
 5. Part of the Data Scientist role will be to provide visualizations that will be able to explain the analysis that you have performed. 
-What tools have you used to create data visualizations?
-
-I have mostly used Tablaeu
+What tools have you used to create data visualizations?   I have mostly used Tablaeu and Excel for visualations. In a recent data science
+poll on LinkedIn I saw Excel was ranked as being "highly underated" for data science. Because I have a webdevelopment background,
+I could also easily display graphs on the Illinois State University website if needed. I have used API's with Javascript such
+as https://www.chartjs.org/docs that are easy to implement. 
 
 
 6. Please describe a presentation that you have completed to present the results of a predictive model you developed.
@@ -51,7 +52,8 @@ to build up a better reputation before trying to implement such a big process.
 
 When I did invent my automation program, I did request permission to use the data first. I also made sure that no confidential information
 would accidently be leaked. I also had a simple prototype built before hand so I had very high confidence the program would work.
-I always come prepared so I always look professional.
+I always come prepared so I always look professional. I did not want to look silly if I spent ten hours on a Python project for it to only
+to not work.
 
 
 8. During analysis, how do you treat missing values?
@@ -69,7 +71,8 @@ simple regression line. This is the best common practice but can also take the m
 Python Pandas dataFrame is by far my favorite tool. It is what I used to automate accounting anaytics predictions at Illinois State University,
 financial automation at Douglas Capital Management, and predictive anaytics at Clark Street Capital. Douglas Capital Management 
 used predicitve analytics with Python and I was preparing to do this but the project got put on major hold due to Covid19. 
-I also love using Tablaeu because it is simple to use and beautifully made by Salesforce. 
+I also love using Tablaeu because it is simple to use and has been well updated by Salesforce. Tablaeu gives a data scientist
+an easy way to explain code to someone who may not have an intensive statistics and coding background.
 
 
 
