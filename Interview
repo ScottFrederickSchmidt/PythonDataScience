@@ -36,7 +36,7 @@ OperCashFlTTM - CapExTTM + IntExpTTM*(1-TaxRate%TTMInd/100) would be inserted in
 formula can affect future returns. More important formulas such as annual growth rate would have a higher significance for returns.
 We also had to account for missing data. On occasion, missing data was completely deleted. But the majority of the time,
 missing data was filled in using a estimate by a regression line. Basic MATLAB functions would be used to help find the statistic relevance of each formula. 
-In 2019, our returns were in the top ten.
+In 2019, our returns were in the top ten. My own personal returns 
 
 During my MBA program as an ISU graduate assistant, I generated a 95% r-squared using data analytics (depends on adjustment to overfitting). 
 This identified the best candidates that would most likely successfully graduate at ISU. This was the final MBA capstone course, MQM497. 
