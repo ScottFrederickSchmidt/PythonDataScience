@@ -51,20 +51,18 @@ One must not just code, but code in the correct order and logic. My data manipul
 https://github.com/ScottFrederickSchmidt/Project-Euler-Python
 https://github.com/ScottFrederickSchmidt/LeetCode
 
+Memory is an important issue of the life of a programmer. This is because Excel has a max of around two million rows 
+while Python can have a max out on memory with very large, complex dataFrame. However, having rows at this mangitude does not happen often. 
+Therefore, Python cam be used as pimrary data manipulation language using pandas.
+This is what Python was specifically designed for and why it is now one of the most used languages in the world.
+In a rare event there was data with more than ten million rows, I would be able to maniuplate the data with SQL but it would
+take me much longer than with Python. Challenging SQL analytics was done in my Udemy course which can be found below:
+https://github.com/ScottFrederickSchmidt/Complete-SQL-Bootcamp-and-SQL-DataAnalytics-Course
+
 On my "Amazon" site, I built an entire SQL database that was on the backend. It is connected on the frontend using PHP. 
 The basic SQL terminology were all used for this project (i.e. select, insert, update, delete). 
 In addition, it has a basic SQL search and recommendation section. All these SQL queries happened with high performance speed.
 See code for reference: https://github.com/ScottFrederickSchmidt/Amazon-like-site
-
-
-Excel has a max of around two million rows while Python can have a max out on memory with very large, complex dataFrame. 
-However, having rows at this mangitude does not happen often. Therefore, Python cam be used as data manipulation language
-using pandas. This is what Python was specifically designed for and why it is now one of the most used languages in the world.
-In a rare event there was data with more than ten million rows, I would be able to maniuplate the data with SQL but it would
-take me much longer than with Python. 
-
-My three SQL courses can be viewed here:
-https://github.com/ScottFrederickSchmidt/Complete-SQL-Bootcamp-and-SQL-DataAnalytics-Course
 
 
 5. Part of the Data Scientist role will be to provide visualizations that will be able to explain the analysis that you have performed. 
