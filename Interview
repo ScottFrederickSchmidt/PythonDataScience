@@ -95,8 +95,8 @@ Thankfully, one coding professor encouraged me to apply for the data science pos
 Great question! I think my data science accounting automation software I have developed would save Illinois State University, 
 if inmplemented correctly, well over a hunrdred thousand dollars a year. But I have not had the confidence to "sell" my idea yet.
 
-A prototype using fake data built before hand so I had very high confidence the program would work.
-I am always prepared and professional. When I did invent my automation program, I did request permission to use the data first.
+A prepared professional prototype using fake data was built before hand so I had confidence the program would work.
+When I did invent my automation program, I did request permission to use the data first.
 I also made sure that no confidential information would accidently be leaked.
 
 
@@ -115,8 +115,10 @@ These formulas were then removed completely from the optimization process.
 
 
 9. What are the tools you have most commonly used to complete predictive analysis?  Which one is your favorite?   
-Python Pandas dataFrame is by far my favorite tool. It is what I used to automate accounting anaytics predictions at Illinois State University,
-financial automation at Douglas Capital Management, and predictive anaytics at Clark Street Capital. 
-I also love using Tablaeu because it is simple to use and has been well adapted by Salesforce. Tablaeu gives a data scientist
-an easy way to explain data to an individual who may not have a statistics and coding background.
+Python Pandas dataFrame is by far my favorite tool. This is what I used to automate the accounting anaytics predictions at Illinois State University,
+financial automation at Douglas Capital Management, and some predictive anaytics at Clark Street Capital. This is what was taught in my Data Science Bootcamp
+on Udemy and by my data science mentor, Sukamar Lagapati.
+
+Salesforce has done a fantastic job with their implementation of Tablaeu. Tablaeu gives a data scientist
+an easy way to explain data to an individual who may not have a statistics or coding background.
 
