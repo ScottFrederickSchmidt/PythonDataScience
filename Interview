@@ -5,6 +5,7 @@ I hope taking the Python Data Science position gives hope to every ISU student t
 one can achieve anything as I too am an ISU graduate.
 On my first-year anniversary as a Python Data Scientist, I plan to donate 3% of my first year's salary to an ISU Python/CS student. 
 
+
 1. How does this position fit with the career path you envision for yourself?
 I hope to receive this position with no intention of leaving Illinois State University as an employer.
 It is where I am a former, current, and future student, and ISU is home to me. 
@@ -62,11 +63,14 @@ See code for reference: https://github.com/ScottFrederickSchmidt/Amazon-like-sit
 For example, Excel has a max of around two million rows while Python can have a max out on memory with very large, complex dataFrame. 
 However, having rows at this mangitude does not happen often and one can simply use Python to perform queries. 
 
+
 5. Part of the Data Scientist role will be to provide visualizations that will be able to explain the analysis that you have performed. 
-What tools have you used to create data visualizations?   I have mostly used Tablaeu and Excel for visualations. In a recent data science
+What tools have you used to create data visualizations?  
+I have mostly used Tablaeu and Excel for visualations. In a recent data science
 poll on LinkedIn I saw Excel was ranked as being "highly underated" for data science. Because I have a webdevelopment background,
 I could also easily display graphs on the Illinois State University website if needed. I have used API's with Javascript such
 as https://www.chartjs.org/docs that are easy to implement. 
+
 
 
 6. Please describe a presentation that you have completed to present the results of a predictive model you developed.
