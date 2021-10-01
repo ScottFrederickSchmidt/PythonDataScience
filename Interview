@@ -58,8 +58,12 @@ https://github.com/ScottFrederickSchmidt/Complete-SQL-Bootcamp-and-SQL-DataAnaly
 https://github.com/ScottFrederickSchmidt/Project-Euler-Python
 https://github.com/ScottFrederickSchmidt/LeetCode
 
+On my "Amazon" site, I built an entire SQL database that was on the backend. It is connected on the frontend using PHP. The basic SQL terminology were all used for this project
+(i.e. select, insert, update, delete). In addition, it has a basic SQL search and recommendation section. All these SQL queries happened with high performance speed.
+See code for reference: https://github.com/ScottFrederickSchmidt/Amazon-like-site
 
-
+For example, Excel has a max of around two million rows while Python can have a max out on memory with very large, complex dataFrame. 
+However, having rows at this mangitude does not happen often and one can simply use Python to perform queries. 
 
 5. Part of the Data Scientist role will be to provide visualizations that will be able to explain the analysis that you have performed. 
 What tools have you used to create data visualizations?   I have mostly used Tablaeu and Excel for visualations. In a recent data science
