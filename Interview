@@ -4,8 +4,10 @@ Scott Schmidt – Data Science Interview
 1.	How does this position fit with the career path you envision for yourself?
 I hope to receive this position with no intention of leaving Illinois State University as an employer.
 It is where I am a former, current, and future student, and ISU is home to me. 
-I will not be leaving in the next six years because I plan to get my ten-year pension. This makes me the best long-term investment for the position.
-Before starting the position, I plan to finish a Udemy Data Science bootcamp. Over my two weeks off in December, I plan on doing over a hundred hours of machine learning coding 
+I will not be leaving in the next six years because I plan to get my ten-year pension. 
+This makes me the best long-term investment for the position.
+Before starting the position, I plan to finish a Udemy Data Science bootcamp.
+Over my two weeks off in December, I plan on doing over a hundred hours of machine learning coding 
 puzzles from AlgoExpert.io. At some point, I plan on taking statistic classes at Illinois State University because I do realize I may have co-workers with 
 a master’s degree in statistics. I want to be able to be a team player and better understand their role. 
 
@@ -42,11 +44,19 @@ I always come prepared so I always look professional.
 
 
 8.	During analysis, how do you treat missing values?
-First off, if there are not a lot of 
+First off, if there is not a lot of data, one should consider not using that data. For instance, when analyzing microcap stocks at Douglas Capital Management 
+using portfolio123.com, sometimes there was not a lot of data for more unusually common financial formulas. When one would plot the data, it was obvious
+because the graph would have "buckets" that were completely missing. 
+
+If there was only some missing data, one could easily use a Python script to delete values that do not have data. 
+A third choice is to simply fill the missing data with a 0. However, this can easily disort the data.
+Most commonly, is one can use predicitive scores to get an "average" of what the missing data probably is using a 
+simple regression line. This is the best common practice but can also take the most time.
 
 
 9.	What are the tools you have most commonly used to complete predictive analysis?  Which one is your favorite?   
-
+Python Pandas dataFrame is by far my favorite tool. It is what I used to automate accounting anaytics predictions at Illinois State University,
+financial automation at Douglas Capital Management, and predictive anaytics at Clark Street Capital. 
 
 
 First off, hello Kevin! Long time no see since being in the MBA program at ISU together. 
