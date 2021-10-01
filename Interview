@@ -60,6 +60,8 @@ See code for reference: https://github.com/ScottFrederickSchmidt/Amazon-like-sit
 Excel has a max of around two million rows while Python can have a max out on memory with very large, complex dataFrame. 
 However, having rows at this mangitude does not happen often. Therefore, Python cam be used as data manipulation language
 using pandas. This is what Python was specifically designed for and why it is now one of the most used languages in the world.
+In a rare event there was data with more than ten million rows, I would be able to maniuplate the data with SQL but it would
+take me much longer than with Python. 
 
 My three SQL courses can be viewed here:
 https://github.com/ScottFrederickSchmidt/Complete-SQL-Bootcamp-and-SQL-DataAnalytics-Course
@@ -103,9 +105,11 @@ I also made sure that no confidential information would accidently be leaked.
 8. During analysis, how do you treat missing values?
 The simple, easy way to treat missing values is to simply delete any data row that has a missing value.
 However, this can give less data points to make accurate predictions.
-A third choice is to simply fill the missing data with a 0. However, this can easily disort the data.
+
 Most commonly, is one can use predicitive scores to get an "average" of what the missing data probably is using a 
 simple regression line. This is the best common practice but can also take the most time.
+
+A bad choice would be to simply fill the missing data with a 0 because this would easily disort the data.
 
 Lastly, if there is not a lot of data points with lots of missing data, one should consider not using that data at all. 
 For instance, when analyzing microcap stocks at Douglas Capital Management 
