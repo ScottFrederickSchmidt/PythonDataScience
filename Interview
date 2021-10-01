@@ -1,9 +1,10 @@
 1. How does this position fit with the career path you envision for yourself?
-I want to improve my Python skills where I can become as strong as a Python programmer as Arafath Hossain, a current Data Sciencist at ISU.
+I want to improve my Python skills where I can become as strong as a Python Data Scientist as Arafath Hossain, a current Data Sciencist at ISU.
 His recent pell grant project on GitHub he voluntarily made is one of the most amazing things I have seen in the past few months, and I want to be like him.
-I will not be leaving the data science position in the next six years because I will want to get my ten-year pension. 
+I will not be leaving the data science position in the next six years so I can achieve my ten-year pension. 
 This makes me the best long-term investment for the position.
 Illinois State University is home to me as a former, current, and future student.
+
 
 2. Data extrapolation and analysis are critical to accurate models being developed.  Please describe an example of data extract and analysis that you have completed.
 At Illinois State University, I invented a Python data science pandas dataFrame automation program that 
@@ -12,16 +13,17 @@ https://github.com/ScottFrederickSchmidt/AccountingAutomation
 
 This in itself was a very important task because it involves accounting. If the program is not 100% accurate, one could
 get involved in an audit that could cost the company thousands of dollars and a bad reputation. In accounting, one must be exact.
-There are no guesses or predictions. Accuracy and attention to detail is of highest importance.
+There are no guesses. Accuracy, attention to detail and perfection is of highest importance.
 
 
 3. Please describe the experience you have creating predictive models.
 
 At Douglas Capital Management, I used portfolio123.com database with hundreds of finance formulas to predict future returns. For instance,
  OperCashFlTTM - CapExTTM + IntExpTTM*(1-TaxRate%TTMInd/100) would be inserted into a database with an optimization process to see how this one 
- formula can affect future returns. We also had to account for missing and/or overfitting data. 
-Basic MATLAB functions would be used to help find the statistic relevance of each formula. 
-In 2019, our returns for our aggressive trading returns were in the top ten. 
+ formula can affect future returns. More important formulas such as annual growth rate would have a higher signifiance
+We also had to account for missing data. On occasion, missing data was completely deleted. But the majority of the time,
+missing data was filled in using a estimate by a regression line. Basic MATLAB functions would be used to help find the statistic relevance of each formula. 
+In 2019, our returns were in the top ten. Dr. 
 
 During my MBA program as an ISU graduate assistant, I generated a 95% r-squared using data analytics (depends on adjustment to overfitting). 
 This identified the best candidates that would most likely successfully graduate at ISU. This was the final MBA capstone course, MQM497. 
@@ -49,8 +51,8 @@ See code for reference: https://github.com/ScottFrederickSchmidt/Amazon-like-sit
 
 
 Excel has a max of around two million rows while Python can have a max out on memory with very large, complex dataFrame. 
-However, having rows at this mangitude does not happen often. I would imagine this could happen at an enormous company like Amazon.
-Therefore, Python cam be used as a query langauge as that is what Python was designed to do.
+However, having rows at this mangitude does not happen often. Therefore, Python cam be used as data manipulation language
+using pandas. This is what Python was specifically designed for and why it is now one of the most used languages in the world.
 
 My three SQL courses can be viewed here:
 https://github.com/ScottFrederickSchmidt/Complete-SQL-Bootcamp-and-SQL-DataAnalytics-Course
