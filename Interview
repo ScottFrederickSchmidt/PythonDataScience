@@ -21,14 +21,12 @@ At Douglas Capital Management, I used portfolio123.com database with hundreds of
  OperCashFlTTM - CapExTTM + IntExpTTM*(1-TaxRate%TTMInd/100) would be inserted into a database with an optimization process to see how this one 
  formula can affect future returns. We also had to account for missing and/or overfitting data. 
 Basic MATLAB functions would be used to help find the statistic relevance of each formula. 
-In 2019 of Q4, our returns for our aggressive trading returns were in the top ten. 
+In 2019, our returns for our aggressive trading returns were in the top ten. 
 
 During my MBA program as an ISU graduate assistant, I generated a 95% r-squared using data analytics (depends on adjustment to overfitting). 
 This identified the best candidates that would most likely successfully graduate at ISU. This was the final MBA capstone course, MQM497. 
 In conclusion, Pell Grants and amount of initiated contacts are the two biggest factors in whether a student enrolled at the university or not. 
 These two factors alone can make a fairly good prediction on whether a student enrolls at the university or not. 
-
-Our R-Squared was .99 which is shows a very strong correlation; however, this might be extremely high because of overfitting. 
 In conclusion, neural networks show that undecided majors, Pell Grant, distance from ISU, # of initiated events, family income median, total consumer expenditures, 
 high school low income percentage, and high school GPA are the major factors in whether a student enrolls at Illinois State University or not. 
 The test confirms that ACT, GPA, major, Pell Grant, and # of initiated events make a significant difference in students enrolling at Illinois State University.  
@@ -44,12 +42,15 @@ One must not just code, but code in the correct order and logic. My data manipul
 https://github.com/ScottFrederickSchmidt/Project-Euler-Python
 https://github.com/ScottFrederickSchmidt/LeetCode
 
-On my "Amazon" site, I built an entire SQL database that was on the backend. It is connected on the frontend using PHP. The basic SQL terminology were all used for this project
-(i.e. select, insert, update, delete). In addition, it has a basic SQL search and recommendation section. All these SQL queries happened with high performance speed.
+On my "Amazon" site, I built an entire SQL database that was on the backend. It is connected on the frontend using PHP. 
+The basic SQL terminology were all used for this project (i.e. select, insert, update, delete). 
+In addition, it has a basic SQL search and recommendation section. All these SQL queries happened with high performance speed.
 See code for reference: https://github.com/ScottFrederickSchmidt/Amazon-like-site
 
-For example, Excel has a max of around two million rows while Python can have a max out on memory with very large, complex dataFrame. 
-However, having rows at this mangitude does not happen often and one can simply use Python to perform queries. 
+
+Excel has a max of around two million rows while Python can have a max out on memory with very large, complex dataFrame. 
+However, having rows at this mangitude does not happen often. I would imagine this could happen at an enormous company like Amazon.
+Therefore, Python cam be used as a query langauge as that is what Python was designed to do.
 
 My three SQL courses can be viewed here:
 https://github.com/ScottFrederickSchmidt/Complete-SQL-Bootcamp-and-SQL-DataAnalytics-Course
