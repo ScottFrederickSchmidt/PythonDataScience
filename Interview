@@ -26,6 +26,12 @@ My accounting software can predict if an account is not balanced with 100% accur
 If my accounting software was implemented on a global basis, I think it would save ISU over one hundred thousand dollars a year.
 It would also not automate jobs but instead make the job of an accountant more enjoyable. 
 
+Likewise, at Douglas Capital Management I programmed Python financial automation using pandas, ib_insync, and operating systems (os). 
+One slight mistake with the trading bot could mean a loss of money if the bot gathered incorrect information using the ib_insync package.
+I also used Python to webpage data scrapping using BeautifulSoup (bs4), requests, selenium, webdriver, and to_csv. For example, I developed 
+a weather bot to help get the average temperature across major cities in the United States to help determine the fair value of the 
+price for natural gas depending on the weather during winter. 
+
 Coding efficiency, queries, and data manipulation is my strength as I have over one thousand hours in Python data manipulation 
 which can be viewed on both GitHub and YouTube.One must not just code, but code in the correct order and logic.
 My data manipulation skills can be viewed here:
