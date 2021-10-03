@@ -59,10 +59,10 @@ In conclusion, neural networks show that undecided majors, Pell Grant, distance 
 high school low income percentage, and high school GPA are the major factors in whether a student enrolls at Illinois State University or not. 
 The test confirms that ACT, GPA, major, Pell Grant, and # of initiated events make a significant difference in students enrolling at Illinois State University.  
 
-At Clark Street Capital, I used machine learning and correlations to predict loan risk. 
+At Clark Street Capital, I used machine learning and correlations to predict loan risk using customer and loan data. 
 My "Amazon" website has a basic recommendation system that would predict what purchases the customer might want to buy next.
 
-Sample predictive Python projecs using numpy, pandas, matplotlib.plplot, and sklearn.model_selection can be found my GitHub below:
+Sample predictive Python projects using numpy, pandas, matplotlib.plplot, and sklearn.model_selection can be found my GitHub below:
 https://github.com/ScottFrederickSchmidt/PredictivePythonModeling
 
 
@@ -129,7 +129,7 @@ It will also make the life of an accountant more enjoyable. Presenting programmi
 I have concluded that data manipulation and programming are almost two completely different specialized subjects. 
 
 
-Sample predictive Python projecs using numpy, pandas, matplotlib.plplot, and sklearn.model_selection can be found my GitHub below:
+Sample predictive Python projects using numpy, pandas, matplotlib.plplot, and sklearn.model_selection can be found my GitHub below:
 https://github.com/ScottFrederickSchmidt/PredictivePythonModeling
 
 
