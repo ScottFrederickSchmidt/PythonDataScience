@@ -75,7 +75,6 @@ It also makes the code more reusable in the future (if more columns get added la
 Using the * function is also a security issue. One will accidenty gather confidential information such as
 addresses, studentID, age, birthday, and confidential information into an csv file when it should not be there.
 One should not repeat code. In my automation project, I made sure to never use a line twice.
-Use NOT EXISTS should be used instead of NOT IN. Using NOT EXISTS will not compare with nulls.
 
 Coding efficiency, queries, and data manipulation is my strength as I have over one thousand hours in Python data manipulation 
 which can be viewed on both GitHub and YouTube.One must not just code, but code in the correct order and logic.
