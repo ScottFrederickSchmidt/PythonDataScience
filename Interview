@@ -3,7 +3,7 @@ Hi Kevin. Glad we get to chat since being ISU MBA graduates together.
 1. How does this position fit with the career path you envision for yourself?
 I will continue to use the Python data science skills I have gained from pretigious hedge funds to benefit the education system.
 As an aspiring data scientists, I believe the ISU data science team will able me to grow as a programmer and learn from my peers.
-I want to improve my Python skills where I can become as strong as a Arafath Hossain, a current ISU data scientist.
+I want to improve my Python skills to where I can become as strong as a Arafath Hossain, a current ISU data scientist.
 Illinois State University is home to me as an alum, employee, current, and future student, and I believe the data science team will give me
 the opportunity to apply my knowledge as someone who knows the university culture. Accepting the data science position means more to me than programming in Python/SQL. 
 On my first-year anniversary as a Python data scientist, I plan to donate 2% of my first year's salary to an ISU Python student as a scholarship.
@@ -26,6 +26,9 @@ One slight mistake with the trading bot could mean a loss of money if the bot ga
 I also used Python to webpage data scrapping using BeautifulSoup (bs4), requests, selenium, webdriver, and to_csv. For example, I developed 
 a weather bot to help get the average temperature across major cities in the United States to help determine the fair value of the 
 price for natural gas depending on the weather during winter. I can probably show my Python weather bot I created on request.
+
+At Clark Street Capital, we used pandas, numpy, and sklearn to predict loan credit risk. Credit risk was predictve through variables such 
+as employment, zip code and credit score.
 
 Coding efficiency, queries, and data manipulation is my strength as I have over one thousand hours in Python data manipulation 
 which can be viewed on both GitHub and YouTube. One must not just code, but code in the correct order and logic.
