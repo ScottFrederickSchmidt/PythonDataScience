@@ -68,7 +68,8 @@ Creating a prediction starts with removing missing values and outliers. Data cle
 At Clark Street Capital, we used pandas, numpy, and sklearn to predict loan credit risk. Credit risk was predictive through variables such 
 as employment, zip code and credit score. This risk was important to analyze because loans were bundled together by their risk score. 
 
-My "Amazon" website has a basic recommendation system that would predict what purchases the customer might want to buy next.
+My "Amazon" website is built on SQL and has a SQL recommendation system that would predict what purchases the customer might want to buy next:
+https://github.com/ScottFrederickSchmidt/Amazon-like-site
 
 Sample predictive Python projects using numpy, pandas, matplotlib.plplot, and sklearn.model_selection can be found my GitHub below:
 https://github.com/ScottFrederickSchmidt/PredictivePythonModeling
