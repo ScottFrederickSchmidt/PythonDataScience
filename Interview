@@ -110,7 +110,7 @@ See code for reference: https://github.com/ScottFrederickSchmidt/Amazon-like-sit
 5. Part of the Data Scientist role will be to provide visualizations that will be able to explain the analysis that you have performed. 
 What tools have you used to create data visualizations?  
 
-I have mostly used Python,  Excel, and Tableau for visualizations. In a recent data science
+I have mostly used Python,  Excel, PowerPoint and Tableau for visualizations. In a recent data science
 poll on LinkedIn I saw Excel was ranked as being "highly underrated" for data science. 
 
 Tableau gives a data scientist an easy way to explain data to an individual who may not have a statistics or coding background. 
@@ -154,7 +154,7 @@ I also made sure that no confidential information would accidently be leaked.
 The simple, easy way to treat missing values is to simply delete any data row that has a missing value using a simple Python script such as
 df.dropna(). This is my preferred method. This method does not make assumptions on top of assumptions.
 
-Another way is to find the mean of the data and assume that the missing value is that number. 
+Another way is to find the mean of the data and assume that the missing value is that number. KNN nearest algorithm can be used to impute data.
 
 
 A bad choice would be to fill the missing data with a 0 because this would easily distort the data.
