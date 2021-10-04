@@ -10,10 +10,14 @@ and I believe the data science team will give me the opportunity to apply my kno
 
 
 2. Data extrapolation and analysis are critical to accurate models being developed.  Please describe an example of data extract and analysis that you have completed.
+
+Dropping null values, outliers, and data cleaning is a large portion of a data science role. 
 At Illinois State University, I invented a Python data science pandas dataFrame automation program that 
 compares thousands of data transactions to database records which detects unbalanced accounts, new transactions, and human error: 
 https://github.com/ScottFrederickSchmidt/AccountingAutomation
 
+This project involved a hundred lines of code with most of it involving data cleaning. For instance, the hyphens in the real data had to 
+be temporarily dropped in order to match the Access database records. Accounting records had to be grouped together. 
 This was a important task because it involves accounting. If the program is not 100% accurate, one could
 get involved in an audit that could cost the company thousands of dollars and a bad reputation. In accounting, one must be exact.
 There are no guesses. Accuracy, attention to detail and perfection is of highest importance.
