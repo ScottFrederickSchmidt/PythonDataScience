@@ -48,8 +48,8 @@ with a new, revised solution.
 
 3. Please describe the experience you have creating predictive models.
 
-At Douglas Capital Management, I used portfolio123.com database with hundreds of finance formulas to predict future returns. For instance,
-OperCashFlTTM - CapExTTM + IntExpTTM*(1-TaxRate%TTMInd/100) would be inserted into a database with an optimization process to see how this one 
+Predicting stock market returns was the entire goal at Douglas Capital Management. I used portfolio123.com database with hundreds of finance formulas to predict future returns.
+For instance, OperCashFlTTM - CapExTTM + IntExpTTM*(1-TaxRate%TTMInd/100) would be inserted into a database with an optimization process to see how this one 
 formula can affect future returns. More important formulas such as annual growth rate would have a higher significance for returns.
 We also had to account for missing data. On occasion, missing data was completely deleted. But the majority of the time,
 missing data was filled in using a estimate by a regression line. Basic MATLAB functions would be used to help find the statistic relevance of each formula. 
