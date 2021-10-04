@@ -81,6 +81,7 @@ It also makes the code more reusable in the future (if more columns get added la
 Using the * function is also a security issue. One will accidenty gather confidential information such as
 addresses, studentID, age, birthday, and confidential information into an csv file when it should not be there.
 One should not repeat code. In my automation project, I made sure to never use a line twice.
+Temporary tables should be used to speed up efficiency instead of having multiple subqueries referring to the same table.
 Using inner join can limit the rows brought into the data to only what is needed.
 
 Coding efficiency, queries, and data manipulation is my strength as I have over one thousand hours in Python data manipulation 
