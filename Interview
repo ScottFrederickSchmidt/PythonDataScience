@@ -129,8 +129,7 @@ program on a more frequent and global basis. I truly believe my program can save
 It will also make the life of an accountant more enjoyable. Presenting programming code is more of a challenge than I originally thought because 
 I have concluded that data manipulation and programming are almost two completely different specialized subjects. 
 
-
-Sample predictive Python projects using numpy, pandas, matplotlib.plplot, and sklearn.model_selection can be found my GitHub below:
+Sample predictive Python projects using numpy, pandas, matplotlib.pyplot, and sklearn.model_selection can be found my GitHub below:
 https://github.com/ScottFrederickSchmidt/PredictivePythonModeling
 
 
