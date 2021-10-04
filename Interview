@@ -103,12 +103,15 @@ See code for reference: https://github.com/ScottFrederickSchmidt/Amazon-like-sit
 
 5. Part of the Data Scientist role will be to provide visualizations that will be able to explain the analysis that you have performed. 
 What tools have you used to create data visualizations?  
-I have mostly used Tableau and Excel for visualizations. In a recent data science
-poll on LinkedIn I saw Excel was ranked as being "highly underrated" for data science. Because I have a web development background,
-I could also display graphs on the Illinois State University website if needed with JavaScript such
+
+I have mostly used Tableau and Excel for visualizations at Clark Street Capital. In a recent data science
+poll on LinkedIn I saw Excel was ranked as being "highly underrated" for data science. 
+
+Tableau gives a data scientist an easy way to explain data to an individual who may not have a statistics or coding background. 
+In fact, Tableau makes it easy for even developers to understand data and make analytical decisions. 
+
+Because I have a web development background, I could also display graphs on the Illinois State University website if needed with JavaScript such
 as https://www.chartjs.org/docs. However, I prefer not to program in JavaScript/webdevelopment but could if needed. 
-
-
 
 
 6. Please describe a presentation that you have completed to present the results of a predictive model you developed.	
@@ -135,7 +138,7 @@ https://github.com/ScottFrederickSchmidt/PredictivePythonModeling
 
 7. Have you ever had to “sell” an idea to your co-workers, supervisor or customers? How did you do it?  
 Great question! I think my data science accounting automation software I have developed would save Illinois State University, 
-if implemented correctly, well over a hundred thousand dollars a year. But I have not had the confidence to "sell" my idea.
+if implemented across the entire university, well over a hundred thousand dollars a year. But I have not had the confidence to "sell" my idea.
 
 A prepared prototype using fake data was built before hand so I had confidence the program would work.
 When I did invent my automation program, I did request permission to use the data first.
