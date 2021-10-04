@@ -79,13 +79,13 @@ It also makes the code more reusable in the future (if more columns get added la
 Using the * function is also a security issue. One will accidenty gather confidential information such as
 addresses, studentID, age, birthday, and confidential information into an csv file when it should not be there.
 One should not repeat code. In my automation project, I made sure to never use a line twice.
+Using inner join can limit the rows brought into the data to only what is needed.
 
 Coding efficiency, queries, and data manipulation is my strength as I have over one thousand hours in Python data manipulation 
 which can be viewed on both GitHub and YouTube.One must not just code, but code in the correct order and logic.
 My data manipulation skills can be viewed on my GitHub below:
 https://github.com/ScottFrederickSchmidt/Project-Euler-Python
 https://github.com/ScottFrederickSchmidt/LeetCode
-
 
 Memory is an important issue of the life of a programmer. This is because Excel has a max of around two million rows 
 while Python can have a max out on memory with very large, complex dataFrame. However, having rows at this magnitude does not happen often. 
@@ -95,11 +95,11 @@ In a rare event there was data with more than ten million rows, I would be able 
 take me much longer than with Python. Challenging SQL analytics was done in my Udemy course which can be found below:
 https://github.com/ScottFrederickSchmidt/Complete-SQL-Bootcamp-and-SQL-DataAnalytics-Course
 
-
 On my "Amazon" site, I built an entire SQL database that was on the backend. It is connected on the frontend using PHP. 
 The basic SQL terminology were all used for this project (i.e. select, insert, update, delete). 
 In addition, it has a basic SQL search and recommendation section. All these SQL queries happened with high performance speed.
 See code for reference: https://github.com/ScottFrederickSchmidt/Amazon-like-site
+
 
 
 
@@ -145,7 +145,6 @@ if implemented across the entire university, well over a hundred thousand dollar
 A prepared prototype using fake data was built before hand so I had confidence the program would work.
 When I did invent my automation program, I did request permission to use the data first.
 I also made sure that no confidential information would accidently be leaked.
-The idea was successfully implemented with highest honors. 
 
 
 8. During analysis, how do you treat missing values?
@@ -153,6 +152,8 @@ The simple, easy way to treat missing values is to simply delete any data row th
 df.dropna(). This is my preferred method. This method does not make assumptions on top of assumptions.
 
 Another way is to find the mean of the data and assume that the missing value is that number. 
+
+
 A bad choice would be to fill the missing data with a 0 because this would easily distort the data.
 
 Lastly, if there is not a lot of data points with lots of missing data, one should consider not using that data at all. 
