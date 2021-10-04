@@ -31,10 +31,6 @@ I also used Python to webpage data scrapping using BeautifulSoup (bs4), requests
 a weather bot to help get the average temperature across major cities in the United States to help determine the fair value of the 
 price for natural gas depending on the weather during winter.
 
-Removing missing values and outliers is an important part of the data cleaning process. 
-At Clark Street Capital, we used pandas, numpy, and sklearn to predict loan credit risk. Credit risk was predictive through variables such 
-as employment, zip code and credit score. This risk was important to analyze because loans were bundled together by their risk score. 
-
 Coding efficiency, queries, and data manipulation is my strength as I have over one thousand hours in Python data manipulation 
 which can be viewed on both GitHub and YouTube:
 https://github.com/ScottFrederickSchmidt/Project-Euler-Python
@@ -64,7 +60,10 @@ In conclusion, neural networks show that undecided majors, Pell Grant, distance 
 high school low income percentage, and high school GPA are the major factors in whether a student enrolls at Illinois State University or not. 
 The test confirms that ACT, GPA, major, Pell Grant, and # of initiated events make a significant difference in students enrolling at Illinois State University.  
 
-At Clark Street Capital, I used machine learning and correlations to predict loan risk using customer and loan data. 
+Creating a prediction starts with removing missing values and outliers. Data cleaning is also a timely but important process. 
+At Clark Street Capital, we used pandas, numpy, and sklearn to predict loan credit risk. Credit risk was predictive through variables such 
+as employment, zip code and credit score. This risk was important to analyze because loans were bundled together by their risk score. 
+
 My "Amazon" website has a basic recommendation system that would predict what purchases the customer might want to buy next.
 
 Sample predictive Python projects using numpy, pandas, matplotlib.plplot, and sklearn.model_selection can be found my GitHub below:
