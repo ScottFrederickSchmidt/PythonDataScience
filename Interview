@@ -83,6 +83,7 @@ Here are some ideas of producing an efficient SQL result:
 The larger the table, the longer it takes to read the data.
 Using a JOIN statement will increase the runtime. As such, I am careful to use only the tables needed.
 One should try to only use the columns needed. Using inner join can limit the rows brought into the data to only what is needed.
+Using subqueries should be used whenever possible before using a JOIN statement if the subquery is returning a single value.
 One should never use the * operator. Including specific column names enhances performance.
 It also makes the code more reusable in the future (if more columns get added later).
 Using the * function is also a security issue. SQL can accidentally gather confidential information such as
