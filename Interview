@@ -27,8 +27,8 @@ I also used Python to webpage data scrapping using BeautifulSoup (bs4), requests
 a weather bot to help get the average temperature across major cities in the United States to help determine the fair value of the 
 price for natural gas depending on the weather during winter. I can probably show my Python weather bot I created on request.
 
-At Clark Street Capital, we used pandas, numpy, and sklearn to predict loan credit risk. Credit risk was predictve through variables such 
-as employment, zip code and credit score.
+At Clark Street Capital, we used pandas, numpy, and sklearn to predict loan credit risk. Credit risk was predictive through variables such 
+as employment, zip code and credit score. This risk was important to analyze because loans were bundled together by their risk score.
 
 Coding efficiency, queries, and data manipulation is my strength as I have over one thousand hours in Python data manipulation 
 which can be viewed on both GitHub and YouTube. One must not just code, but code in the correct order and logic.
