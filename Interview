@@ -29,7 +29,9 @@ Likewise, at Douglas Capital Management I programmed Python financial automation
 One slight mistake with the trading bot could mean a loss of money if the bot gathered incorrect information using the ib_insync package.
 I also used Python to webpage data scrapping using BeautifulSoup (bs4), requests, selenium, webdriver, and to_csv. For example, I developed 
 a weather bot to help get the average temperature across major cities in the United States to help determine the fair value of the 
-price for natural gas depending on the weather during winter.
+price for natural gas depending on the weather during winter. Also, one must make sure that the data is correct. For instance,
+a stock split could easily disort data if the data does not do adjustments. Many times, investment firms (and other companies) 
+purchase data that is actually bad data without realizing it. 
 
 Coding efficiency, queries, and data manipulation is my strength as I have over one thousand hours in Python data manipulation 
 which can be viewed on both GitHub and YouTube:
