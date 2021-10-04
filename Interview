@@ -73,6 +73,9 @@ https://github.com/ScottFrederickSchmidt/PredictivePythonModeling
 
 
 4. In terms of SQL syntax or query structure, what are some things you focus on when writing a query to ensure it functions as efficiently as possible?
+To write an effective SQL query, one first needs to understand the data (hopefully I have an advantage at understanding Illinois State University data being employed here
+for almost five years now). Once the data is understood, the criteria must then be identified. Then, one can now create an efficient SQL query to find the desired results.
+Here are some ideas of producing an efficient SQL result:
 
 The larger the table, the longer it takes to read the data. Using a JOIN statement will increase the runtime. 
 One should try to only use the columns needed. 
