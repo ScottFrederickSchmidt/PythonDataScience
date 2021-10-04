@@ -41,7 +41,7 @@ https://github.com/ScottFrederickSchmidt/Project-Euler-Python
 https://github.com/ScottFrederickSchmidt/LeetCode
 
 For instance, my first solution to problem 44 took 86 seconds. 
-After putting five hours worth of changing when the problem would search for a greater number and adding in a search function, 
+After putting many hours worth of changing the logic (i.e. when for a greater number is searched and adding in a function), 
 I was able to get the code to run in under two seconds with a new, revised solution.
 
 
