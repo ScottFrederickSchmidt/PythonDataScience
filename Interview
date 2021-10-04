@@ -8,7 +8,6 @@ Illinois State University is home to me as an alum, employee, former graduate as
 and I believe the data science team will give me the opportunity to apply my knowledge as someone who knows the university culture. 
 
 
-
 2. Data extrapolation and analysis are critical to accurate models being developed.  Please describe an example of data extract and analysis that you have completed.
 At Illinois State University, I invented a Python data science pandas dataFrame automation program that 
 compares thousands of data transactions to database records which detects unbalanced accounts, new transactions, and human error: 
@@ -24,7 +23,7 @@ Likewise, at Douglas Capital Management I programmed Python financial automation
 One slight mistake with the trading bot could mean a loss of money if the bot gathered incorrect information using the ib_insync package.
 I also used Python to webpage data scrapping using BeautifulSoup (bs4), requests, selenium, webdriver, and to_csv. For example, I developed 
 a weather bot to help get the average temperature across major cities in the United States to help determine the fair value of the 
-price for natural gas depending on the weather during winter. I can probably show my Python weather bot I created on request.
+price for natural gas depending on the weather during winter.
 
 At Clark Street Capital, we used pandas, numpy, and sklearn to predict loan credit risk. Credit risk was predictive through variables such 
 as employment, zip code and credit score. This risk was important to analyze because loans were bundled together by their risk score.
