@@ -26,6 +26,7 @@ I also used Python to webpage data scrapping using BeautifulSoup (bs4), requests
 a weather bot to help get the average temperature across major cities in the United States to help determine the fair value of the 
 price for natural gas depending on the weather during winter.
 
+Removing missing values and outliers is an important part of the data cleaning process. 
 At Clark Street Capital, we used pandas, numpy, and sklearn to predict loan credit risk. Credit risk was predictive through variables such 
 as employment, zip code and credit score. This risk was important to analyze because loans were bundled together by their risk score. 
 
