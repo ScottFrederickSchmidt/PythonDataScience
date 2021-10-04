@@ -108,14 +108,14 @@ poll on LinkedIn I saw Excel was ranked as being "highly underrated" for data sc
 Tableau gives a data scientist an easy way to explain data to an individual who may not have a statistics or coding background. 
 In fact, Tableau makes it easy for even developers to understand data and make analytical decisions. 
 
-Because I have a web development background, I could also display graphs on the Illinois State University website if needed with JavaScript such
+Because I have a web development background, I could also display graphs on the Illinois State University website if needed with a JavaScript API such
 as https://www.chartjs.org/docs. 
 
 
 6. Please describe a presentation that you have completed to present the results of a predictive model you developed.	
 At Clark Street Capital, I had to help package and sell at $42 million dollar non-performing commercial real estate loan bundled together 
-as a mortgage-back security through a major United States bank. Based upon our predictive analysis, the goal was to sell the loan
-around eighty cents on the dollar. I had to help present this MBS product over phone individually to around a hundred banking clients across
+as a mortgage-back security through a major United States bank. Based upon our predictive analysis of the loan risk, the goal was to sell the loan
+around eighty cents on the dollar. I had to help present this MBS product over phone to over a hundred banking clients across
 the United States.
 
 
