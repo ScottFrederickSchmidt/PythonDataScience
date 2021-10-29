@@ -1,9 +1,8 @@
 '''
-I will be uploading sample past interview Python questions here:
+Past interview Python questions here:
 '''
 
-# practice python interview question in oct 2021:
-# drop duplicates from second df then merge the two together
+# drop duplicates from second df then merge the two together using a "left join":
 start=time.time()
 print("practice interview question")
 
