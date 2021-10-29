@@ -1,0 +1,21 @@
+'''
+I will be uploading sample past interview Python questions here:
+'''
+
+# practice python interview question in oct 2021:
+# drop duplicates from second df then merge the two together
+start=time.time()
+print("practice interview question")
+
+df1=r'C:\Users\Scott\Desktop\practiceDF1.csv' 
+df1=pd.read_csv(df1)
+#print(df1)
+
+df2=r'C:\Users\Scott\Desktop\practiceDF2.csv'
+df2=pd.read_csv(df2)
+#print(df2)
+
+df2=df2.drop_duplicates(subset=None, keep='first', inplace=False, ignore_index=False)
+#print(df2)
+
+pd.merge(df1, df2, how='left', on='one')
