@@ -1,0 +1,44 @@
+'''
+SimPy is a Python library that helps stimulate real-life events.
+It is used as an active model for customers, vehicles, and manufacturing. 
+An often used example other than a car is a restaurant:
+https://simpy.readthedocs.io/en/latest/simpy_intro/index.html
+'''
+import simpy
+
+def car(env):
+    #env = simpy.Environment()
+    while True:
+        print('Start parking at %d' % env.now)
+        parking_duration = 5
+        yield env.timeout(parking_duration)
+        print('Start driving at %d' % env.now)
+        trip_duration = 2
+        yield env.timeout(trip_duration)
+
+env = simpy.Environment()
+env.process(car(env))
+env.run(until=15)
+
+'''
+Here is some premade code I found on this link:
+https://towardsdatascience.com/simulate-real-life-events-in-python-using-simpy-e6d9152a102f
+'''
+
+def waiter(env):
+    while True: # Simulate until the time limit
+        print(f"Start taking orders from customers at {env.now}")
+        take_order_duration = 5
+        yield env.timeout(take_order_duration) # models duration
+
+        print(f'Start giving the orders to the cooks at {env.now}')
+        give_order_duration = 2
+        yield env.timeout(give_order_duration)
+
+        print(f'Start serving customers food at {env.now}\n')
+        serve_order_duration = 5
+        yield env.timeout(serve_order_duration)
+
+env = simpy.Environment() # the environment where the waiter lives
+env.process(waiter(env)) # pass the waiter to the environment
+env.run(until=30) # Run simulation until 30s
