@@ -7,7 +7,6 @@ https://simpy.readthedocs.io/en/latest/simpy_intro/index.html
 import simpy
 
 def car(env):
-    #env = simpy.Environment()
     while True:
         print('Start parking at %d' % env.now)
         parking_duration = 5
