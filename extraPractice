@@ -1,5 +1,5 @@
 '''
-Past interview Python questions here:
+Random Python questions here given to me by friends:
 '''
 
 # drop duplicates from second df then merge the two together using a "left join":
