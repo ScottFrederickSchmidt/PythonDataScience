@@ -41,3 +41,53 @@ def waiter(env):
 env = simpy.Environment() # the environment where the waiter lives
 env.process(waiter(env)) # pass the waiter to the environment
 env.run(until=30) # Run simulation until 30s
+
+
+
+
+
+'''
+This is an example of using SimPy and generators to do a Movie Theater Simluation.
+The goal is to get an average wait for 10 minutes or less.
+The events are as follows:
+1)Arrive at theater
+2)Get in line to buy a ticket
+3)Buy a ticket
+4)Wait in line to have their ticket checked
+5)Decide to buy concessiosn or not
+
+Simulating Real-World Processes in Python with SimPy:
+https://www.youtube.com/watch?v=NypbxgytScM
+'''
+
+import simpy
+import random 
+import statistics
+
+wait_times=[]
+
+class Theater(object):
+    def __init__(self, env, num_cashiers, num_servers, num_ushers):
+        self.env=env
+        self.casher=simpy.Resource(env, num_cashiers)
+        self.server=simpy.Resource(env, num_severs)
+        self.ushers=simpy.Resource(env, num_usheres)
+        
+    def purchase_ticket(self,  moviegoer):
+        yield self.env.timeout(random.randint(1 ,3))
+    
+    def check_ticket(self, moviegoer):
+        yield self.env.timeout(3/60)
+        
+    def sell_food(self, moviegoer):
+        yield self.env.timeout(random.randint(1, 6))
+
+env = simpy.Environment()
+t1=Theater(env, 1, 2, 3)
+print(t1)
+
+'''
+env = simpy.Environment() # the environment where the waiter lives
+env.process(waiter(env)) # pass the waiter to the environment
+env.run(until=21) # Run simulation until 30s
+'''
